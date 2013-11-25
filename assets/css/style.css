@@ -1,0 +1,224 @@
+
+/* 659A9A analogic http://colorschemedesigner.com/ */
+
+/* GLobal tag styles */
+html, body 
+{
+	height: 100%;
+    margin: 0;
+}
+p
+{
+	font-family: "mostra-nuova";
+	font-size: 1.8em;
+}
+
+/* Page global styles */
+#wrapper 
+{
+	min-height: 100%; 
+	top:140;
+ }
+ .content_cell
+ {
+ 	padding-top: 170px;
+ 	text-align: center;
+ }
+ .content_cell_less_pad
+ {
+ 	padding-top: 100px;
+ 	text-align: center;
+ }
+
+ /* Global Effects */
+.shadow_bottom
+{
+	-webkit-box-shadow: 0px 2px 6px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 6px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 6px rgba(50, 50, 50, 0.75);
+}
+.shadow_top
+{
+	-webkit-box-shadow: 0px -2px 6px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px -2px 6px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px -2px 6px rgba(50, 50, 50, 0.75);
+}
+
+/* Main menu */
+#menu
+{
+	position: fixed;
+    left: 0;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    background-image: url('../img/tweed.png');
+    background-repeat: repeat;
+	text-align: center;
+}
+#menu ul
+{
+	padding: 0px;
+	margin: 20px 0px 0px 0px;
+	bottom: 0px;
+	height: 120px;
+}
+#menu ul li
+{
+	display: inline-block;
+	list-style-type: none;
+	width: 200px;
+	margin: 0px;
+}
+#menu a
+{
+	font-family: "mostra-nuova";
+	color: #e5e9f2;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+/* Home page */
+.home
+{
+	background-image: url('../img/squairy_light.jpg');
+	background-repeat: repeat;
+}
+.home h1
+{
+	margin: 30px 0px 0px 0px;
+	padding: 0px;
+	font-family: "teeshirt";
+	text-shadow: 6px 5px 5px rgba(150, 150, 150, 1);
+	color: #003366;
+	font-size: 7em;
+}
+.home h3
+{
+	font-family: "teeshirt";
+	text-shadow: 2px 1px 5px rgba(150, 150, 150, 1);
+	font-size: 3em;
+	color: #3d454c;
+	margin: 15px;
+}
+
+/* Developer page */
+.developer
+{
+	background-image: url('../img/greyzz.jpg');
+	background-repeat: repeat;
+}
+.developer h1
+{
+	margin: 30px 0px 0px 0px;
+	padding: 0px;
+	font-family: "teeshirt";
+	text-shadow: 3px 5px 5px rgba(0, 0, 0, 1);
+	color: #885511;
+	font-size: 7em;
+}
+.developer h2
+{
+	font-family: "mostra-nuova";
+	font-size: 1.8em;
+}
+.developer h3
+{
+	font-family: "teeshirt";
+	font-size: 1.8em;
+}
+
+/* Designer page */
+.designer
+{
+	background-image: url('../img/old_moon.jpg');
+	background-repeat: repeat;
+}
+.designer h1
+{
+	padding: 0px;
+	font-family: "teeshirt";
+	color: #001933;
+	font-size: 7em;
+	margin-bottom: 0px;
+}
+.designer h3
+{
+	font-family: "teeshirt";
+	font-size: 1.8em;
+	margin-top: 0px;
+}
+
+/* Music page */
+.music
+{}
+
+/* Componenets */
+#skills
+{
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	display: block;
+}
+.skill_circle 
+{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px; 
+	display: inline-block;
+	padding: auto;
+	text-align: center;
+	background: rgb(221, 204, 187);
+	background: -moz-linear-gradient(309deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
+	background: -webkit-linear-gradient(309deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
+	background: -o-linear-gradient(309deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
+	background: -ms-linear-gradient(309deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
+	background: linear-gradient(39deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
+	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.75);
+	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.75);
+	border: 3px solid #885511; 
+}
+.skill_circle:hover
+{
+	background: rgb(221, 204, 187);
+	background: -moz-linear-gradient(30deg, rgb(221, 204, 187) 70%, rgb(225, 225, 238) 100%);
+	background: -webkit-linear-gradient(30deg, rgb(221, 204, 187) 70%, rgb(225, 225, 238) 100%);
+	background: -o-linear-gradient(30deg, rgb(221, 204, 187) 70%, rgb(225, 225, 238) 100%);
+	background: -ms-linear-gradient(30deg, rgb(221, 204, 187) 70%, rgb(225, 225, 238) 100%);
+	background: linear-gradient(120deg, rgb(221, 204, 187) 70%, rgb(225, 225, 238) 100%);
+}
+.skill_circle img
+{
+	margin-top: 20px;
+}
+.portfolio_screenshot
+{
+	display: inline-block;
+	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.75);
+	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.75);
+	border: 3px solid #111110; 
+	margin: 5px;
+	border-radius: 10px;
+	padding: 10px;
+	background-image: url('../img/tweed.png');
+    background-repeat: repeat;
+}
+.portfolio_screenshot img
+{
+	width: 300px;
+	border: 1px dotted #111110; 
+}
+.portfolio_screenshot a
+{
+	color: #e5e9f2;
+	text-decoration: none;
+}
+.portfolio_screenshot a:hover
+{
+	text-decoration: underline;
+}
