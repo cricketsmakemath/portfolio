@@ -12,6 +12,13 @@ p
 	font-family: "mostra-nuova";
 	font-size: 1.8em;
 }
+h1
+{
+	margin: 40px 0px 0px 0px;
+	padding: 0px;
+	font-family: "teeshirt";
+	font-size: 7em;
+}
 
 /* Page global styles */
 #wrapper 
@@ -85,13 +92,9 @@ p
 	background-repeat: repeat;
 }
 .home h1
-{
-	margin: 40px 0px 0px 0px;
-	padding: 0px;
-	font-family: "teeshirt";
+{	
 	text-shadow: 6px 5px 5px rgba(150, 150, 150, 1);
-	color: #003366;
-	font-size: 7em;
+	color: #003366;	
 }
 .home h3
 {
@@ -110,12 +113,8 @@ p
 }
 .developer h1
 {
-	margin: 30px 0px 0px 0px;
-	padding: 0px;
-	font-family: "teeshirt";
 	text-shadow: 3px 5px 5px rgba(0, 0, 0, 1);
 	color: #885511;
-	font-size: 7em;
 }
 .developer h2
 {
@@ -136,10 +135,7 @@ p
 }
 .designer h1
 {
-	padding: 0px;
-	font-family: "teeshirt";
 	color: #001933;
-	font-size: 7em;
 	margin-bottom: 0px;
 }
 .designer h3
@@ -153,9 +149,17 @@ p
 	padding:0px;
 	margin: 10px 0px 0px 0px;
 }
-/* Music page */
-.music
-{}
+/* Contact page */
+.contact
+{
+	background-image: url('../img/squairy_light.jpg');
+	background-repeat: repeat;
+}
+.contact h1
+{
+	color: #001933;
+	font-size: 7em;
+}
 
 /* Componenets */
 #skills
@@ -216,12 +220,22 @@ p
 .portfolio_screenshot img
 {
 	width: 280px;
-	border: 1px dotted #111110; 
+	border: 2px solid #111110; 
+	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.75);
+	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.75);
 }
 .portfolio_screenshot a
 {
 	color: #e5e9f2;
 	text-decoration: none;
+	
+}
+.portfolio_screenshot p
+{
+	color: #e5e9f2;
+	text-decoration: none;
+	font-size: 1.2em;
 }
 .portfolio_screenshot a:hover
 {
