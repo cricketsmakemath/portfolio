@@ -56,13 +56,14 @@
   </div>
   <!-- Start Home Page -->
   <div id="wrapper" class="home"><a name="home"></a>
-    <div class="content_cell">
+    <div class="content_cell_less_pad">
       <h1>Dan Stoeltzing</h1>   
       <h3>Web Devloper</h3>
       <h3>Web Designer</h3>
       <h3>Producer/Musician</h3>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a orci erat. Mauris velit augue, ultrices id odio id, vestibulum aliquam."</p>
-      <p>"Ut rutrum bibendum rutrum. Sed eleifend, arcu vitae placerat consectetur, sapien orci convallis mauris, vitae convallis justo purus a erat."</p>
+      <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for
+GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
+    
     </div>      
   </div>
   <!-- End Home Page -->
