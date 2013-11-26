@@ -52,6 +52,7 @@
       <li><div class="menu_link"><div class="menu_link"><div class="menu_link"><a href="#developer" class="menu_link"><img src="assets/img/terminal-2.png" class="menu_icon" /><br>Developer</a></li>
       <li><div class="menu_link"><div class="menu_link"><a href="#designer" class="menu_link"><img src="assets/img/code.png" class="menu_icon" /><br>Designer</a></li>
       <li><div class="menu_link"><a href="#music" class="menu_link"><img src="assets/img/audio-high.png" class="menu_icon" /><br>Producer</a></li>
+      <li><div class="menu_link"><a href="#contact" class="menu_link"><img src="assets/img/contact.png" class="menu_icon" /><br>Contact</a></li>
     </ul>
   </div>
   <!-- Start Home Page -->
