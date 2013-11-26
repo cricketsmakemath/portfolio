@@ -112,10 +112,19 @@ GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and cle
       <div class="portfolio_screenshot">
         <img src="assets/img/screenshots/austin.jpg"><br>
         <p><a href="http://austinmillermusic.com" target="_blank">Austin Miller Music</a></p>
-      </div>
+      </div><br>
       <div class="portfolio_screenshot">
         <img src="assets/img/screenshots/gator.jpg"><br>
         <p><a href="http://bewareofthegator.com" target="_blank">GatorBites Tail &amp; Ale</a></p>
+      </div>
+      
+      <div class="portfolio_screenshot">
+        <img src="assets/img/screenshots/ti.jpg"><br>
+        <p><a href="http://bewareofthegator.com" target="_blank">Turtle Ink Productions</a></p>
+      </div>
+      <div class="portfolio_screenshot">
+        <img src="assets/img/screenshots/cmm.jpg"><br>
+        <p><a href="http://bewareofthegator.com" target="_blank">Crickets Make Math</a></p>
       </div>
     </div>
   </div>

@@ -148,7 +148,11 @@ p
 	font-size: 1.8em;
 	margin-top: 0px;
 }
-
+.designer p
+{
+	padding:0px;
+	margin: 10px 0px 0px 0px;
+}
 /* Music page */
 .music
 {}
@@ -206,11 +210,12 @@ p
 	border-radius: 10px;
 	padding: 10px;
 	background-image: url('../img/tweed.png');
+	width: 330px;
     background-repeat: repeat;
 }
 .portfolio_screenshot img
 {
-	width: 300px;
+	width: 280px;
 	border: 1px dotted #111110; 
 }
 .portfolio_screenshot a
