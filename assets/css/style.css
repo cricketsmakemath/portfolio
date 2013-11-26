@@ -19,23 +19,27 @@ h1
 	font-family: "teeshirt";
 	font-size: 7em;
 }
+h3
+{
+	font-family: "teeshirt";
+}
 
 /* Page global styles */
 #wrapper 
 {
 	min-height: 100%; 
 
- }
- .content_cell
- {
- 	padding-top: 170px;
- 	text-align: center;
- }
- .content_cell_less_pad
- {
+}
+.content_cell
+{
+	padding-top: 170px;
+	text-align: center;
+}
+.content_cell_less_pad
+{
  	padding-top: 100px;
  	text-align: center;
- }
+}
 
  /* Global Effects */
 .shadow_bottom
@@ -97,8 +101,7 @@ h1
 	color: #003366;	
 }
 .home h3
-{
-	font-family: "teeshirt";
+{	
 	text-shadow: 2px 1px 5px rgba(150, 150, 150, 1);
 	font-size: 3em;
 	color: #3d454c;
@@ -123,7 +126,6 @@ h1
 }
 .developer h3
 {
-	font-family: "teeshirt";
 	font-size: 1.8em;
 }
 
@@ -140,7 +142,6 @@ h1
 }
 .designer h3
 {
-	font-family: "teeshirt";
 	font-size: 1.8em;
 	margin-top: 0px;
 }
@@ -228,8 +229,7 @@ h1
 .portfolio_screenshot a
 {
 	color: #e5e9f2;
-	text-decoration: none;
-	
+	text-decoration: none;	
 }
 .portfolio_screenshot p
 {
