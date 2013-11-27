@@ -10,12 +10,12 @@
           $('.menu_link').hover(function() 
           {
               var anchor = this;
-               $(anchor).stop( true, true ).find( "a" ).animate({"margin-bottom":"10px"}, 200);            
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-top":"-10px"}, 200);            
           }, 
           function() 
           {
               var anchor = this;
-               $(anchor).stop( true, true ).find( "a" ).animate({"margin-bottom":"0px"}, 100);            
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-top":"0px"}, 100);            
            }
         );
     });
@@ -49,10 +49,9 @@
   <div id="menu" class="shadow_bottom">
     <ul>
       <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" class="menu_icon" /><br>Dan</a></div></li>
-      <li><div class="menu_link"><div class="menu_link"><div class="menu_link"><a href="#developer" class="menu_link"><img src="assets/img/terminal-2.png" class="menu_icon" /><br>Developer</a></li>
-      <li><div class="menu_link"><div class="menu_link"><a href="#designer" class="menu_link"><img src="assets/img/code.png" class="menu_icon" /><br>Designer</a></li>
-      <!-- <li><div class="menu_link"><a href="#music" class="menu_link"><img src="assets/img/audio-high.png" class="menu_icon" /><br>Producer</a></li> -->
-      <li><div class="menu_link"><a href="#contact" class="menu_link"><img src="assets/img/contact.png" class="menu_icon" /><br>Contact</a></li>
+      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" class="menu_icon" /><br>Developer</a></div></li>
+      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" class="menu_icon" /><br>Designer</a></div></li>
+      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" class="menu_icon" /><br>Contact</a></div></li>
     </ul>
   </div>
   <!-- Start Home Page -->
