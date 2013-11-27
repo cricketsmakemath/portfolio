@@ -24,6 +24,32 @@ h3
 	font-family: "teeshirt";
 }
 
+input, textarea
+{
+	border: 2px solid #001933; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 8px;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	background-color: #e5e9f2;
+	color: #003366;	
+}
+input
+{
+	text-align: center;
+}
+textarea
+{
+	text-align: left;
+}
+input:focus, textarea:focus
+{
+	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.40);
+	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.40);
+	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.40);
+}
 /* Page global styles */
 #wrapper 
 {
@@ -106,6 +132,16 @@ h3
 	margin-right: 50%;
 	position: absolute;
 }
+#contact_form_container p
+{
+	margin: 20px 0px 0px 0px;
+}
+#contact_form_container p.meta
+{
+	font-size: 1em;
+	font-family: sans-serif;
+	margin: 0px;
+}
 
 /* Home page */
 .home
@@ -117,6 +153,7 @@ h3
 {	
 	text-shadow: 6px 5px 5px rgba(150, 150, 150, 1);
 	color: #003366;	
+	margin-top: 70px;
 }
 .home h3
 {	
@@ -230,6 +267,8 @@ h3
 	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.75);
 	border: 3px solid #111110; 
 	margin: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 10px;
 	background-image: url('../img/tweed.png');
@@ -258,4 +297,16 @@ h3
 .portfolio_screenshot a:hover
 {
 	text-decoration: underline;
+}
+.sep_circle
+{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #3d454c;
+	display: inline-block;
+	margin: 0px 4px 0px 4px;
+	border: 3px solid #003366;	
 }

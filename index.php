@@ -58,20 +58,27 @@
   <div id="wrapper" class="home"><a name="home"></a>
     <div class="content_cell_less_pad">
       <h1>Dan Stoeltzing</h1>   
-      <h3>Web Devloper</h3>
-      <h3>Web Designer</h3>
-      <h3>Producer/Musician</h3>
+      <h3>Web Designer &amp; Developer</h3>
+      
+      <br>
+
+      <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
+
       <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for
 GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
+      <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat<br> rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
+        <br><strong>- Another Person, Business Name</strong></p>
     
     </div>      
   </div>
   <!-- End Home Page -->
   <!-- Start Developer Page -->
-  <div id="wrapper" class="developer shadow_top shadow_bottom"><a name="developer"></a>
+  <div id="wrapper" class="developer shadow_top"><a name="developer"></a>
     <div class="content_cell_less_pad">
       <h1>Web Devloper</h1>
-      <h2>I am a creative web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</h2>
+      <p>I am a creative web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
       <h3>These are some of the things I'm skilled in</h3>
       <div id="skills">
         <div class="skill_circle"><img src="assets/img/logos/html.png" width="80px"></div>
@@ -97,7 +104,7 @@ GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and cle
   </div>
   <!-- End Developer Page -->
   <!-- Start Designer Page -->
-  <div id="wrapper" class="designer"><a name="designer"></a>
+  <div id="wrapper" class="designer shadow_top"><a name="designer"></a>
     <div class="content_cell_less_pad">
       <h1>Web Designer</h1>
       <h3>These are some websites I've designed</h3>
@@ -132,19 +139,21 @@ GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and cle
   </div>
   <!-- End Designer Page -->
   <!-- Start Contact Page -->
-  <div id="wrapper" class="contact"><a name="contact"></a>
+  <div id="wrapper" class="contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
+      <p>Questions? Comments? Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
       <div id="contact_form_container">
         <form name="contact_form">
-          <p>Name</p>
-          <input type="text" name="name">
-          <p>Email</p>
-          <input type="text" name="name">
-          <p>Message</p>
-          <textarea name="message"></textarea>
+          <p><strong>Name</strong></p>
+          <input type="text" name="name" size="50">
+          <p><strong>Email Address</strong></p>
+          <p class="meta">I solemnly swear not to share, sell or spam it!</p>
+          <input type="text" name="name" size="50">
+          <p><strong>Message</strong></p>
+          <textarea name="message" rows="5" cols="60"></textarea>
           <p></p>
-          <input type="submit" name="submit" value="submit"> 
+          <input type="submit" name="submit" value="Send"> 
         </form>
       </div>
       </form>
