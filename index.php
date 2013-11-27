@@ -1,3 +1,4 @@
+<html>
 <head>
     <title>Dan Stoeltzing: Web Developer, Web Designer, Producer</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -152,7 +153,7 @@
           <p class="meta">I solemnly swear not to share, sell or spam it!</p>
           <input type="text" name="name" size="50">
           <p><strong>Message</strong></p>
-          <textarea name="message" rows="5" cols="60"></textarea>
+          <textarea name="message" rows="3" cols="60"></textarea>
           <p></p>
           <input type="submit" name="submit" value="Send"> 
         </form>
@@ -163,3 +164,4 @@
   <!-- End Contact Page -->
     
 </body>
+</html>
