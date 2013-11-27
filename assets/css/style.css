@@ -90,7 +90,7 @@ input:focus, textarea:focus
     background-image: url('../img/tweed.png');
     background-repeat: repeat;
 	text-align: center;
-	z-index: 20;
+	z-index: 200;
 }
 #menu ul
 {
