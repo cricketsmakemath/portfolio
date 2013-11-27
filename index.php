@@ -136,6 +136,19 @@ GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and cle
   <div id="wrapper" class="contact"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
+      <div id="contact_form_container">
+        <form name="contact_form">
+          <p>Name</p>
+          <input type="text" name="name">
+          <p>Email</p>
+          <input type="text" name="name">
+          <p>Message</p>
+          <textarea name="message"></textarea>
+          <p></p>
+          <input type="submit" name="submit" value="submit"> 
+        </form>
+      </div>
+      </form>
     </div>
   </div>
   <!-- End Contact Page -->
