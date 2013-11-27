@@ -10,12 +10,12 @@
           $('.menu_link').hover(function() 
           {
               var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-top":"-10px"}, 200);            
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
           }, 
           function() 
           {
               var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-top":"0px"}, 100);            
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
            }
         );
     });
@@ -64,11 +64,10 @@
 
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
-      <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for
-GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
+      <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for GatorBites Tail &amp; Ale. His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat<br> rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
         <br><strong>- Another Person, Business Name</strong></p>
     
     </div>      
@@ -78,7 +77,7 @@ GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and cle
   <div id="wrapper" class="developer shadow_top"><a name="developer"></a>
     <div class="content_cell_less_pad">
       <h1>Web Devloper</h1>
-      <p>I am a creative web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
+      <p>I am a meticulous web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
       <h3>These are some of the things I'm skilled in</h3>
       <div id="skills">
         <div class="skill_circle"><img src="assets/img/logos/html.png" width="80px"></div>
@@ -142,7 +141,7 @@ GatorBites Tail &amp; Ale.<br>His attention to detail, quick turn around and cle
   <div id="wrapper" class="contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
-      <p>Questions? Comments? Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
+      <p>Questions? Comments?<br>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
       <div id="contact_form_container">
         <form name="contact_form">
           <p><strong>Name</strong></p>
