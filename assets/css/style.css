@@ -6,6 +6,8 @@ html, body
 {
 	height: 100%;
     margin: 0;
+    background-image: url('../img/tweed.png');
+    background-repeat: repeat;
 }
 p
 {
@@ -234,6 +236,7 @@ input:focus, textarea:focus
 	display: inline-block;
 	padding: auto;
 	text-align: center;
+	margin-bottom: 4px;
 	background: rgb(221, 204, 187);
 	background: -moz-linear-gradient(309deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
 	background: -webkit-linear-gradient(309deg, rgb(221, 204, 187) 58%, rgb(225, 225, 238) 100%);
@@ -323,6 +326,7 @@ input:focus, textarea:focus
 	z-index: 1;
 }
 
+/* Height adjustments */
 @media (max-height: 1010px) {
 	p 
 	{
@@ -408,7 +412,7 @@ input:focus, textarea:focus
 	}
 	.dan_container img
 	{
-		width: 200px;
+		width: 150px;
 	}
 }
 @media (max-height: 720px) {
@@ -431,6 +435,70 @@ input:focus, textarea:focus
 	}
 }
 @media (max-height: 625px) {
+	.dan_container
+	{
+		display: none;
+	}
+}
+
+/* Width adjustments */
+@media (max-width: 1212px) {
+	.content_cell_less_pad
+	{
+		width: 97%;
+	}
+	.dan_container img
+	{
+		width: 180px;
+	}
+}
+@media (max-width: 1092px) {
+	h1
+	{
+		font-size: 5em;
+	}
+}
+@media (max-width: 887px) {
+	.dan_container img
+	{
+		width: 170px;
+	}
+}
+@media (max-width: 775px) {
+	h1
+	{
+		font-size: 2.5em;
+	}
+	.home h3
+	{
+		font-size: 2.3em;
+	}
+	.dan_container img
+	{
+		width: 150px;
+	}
+}
+@media (max-width: 555px) {
+	.dan_container
+	{
+		display: none;
+	}
+}
+
+/* Both dimension adjustments */
+@media (max-width: 1118px), and (max-height: 626px) {
+	.dan_container img
+	{
+		width: 120px;
+	}
+}
+@media (max-width: 747px), and (max-height: 637px) {
+	.dan_container img
+	{
+		width: 80px;
+	}
+}
+@media (max-width: 494px), and (max-height: 788px) {
 	.dan_container
 	{
 		display: none;

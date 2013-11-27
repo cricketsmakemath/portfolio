@@ -87,7 +87,7 @@
         <div class="skill_circle"><img src="assets/img/logos/php.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/mysql.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/jquery.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/ci.png" width="80px"></div><br>
+        <div class="skill_circle"><img src="assets/img/logos/ci.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/laravel.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/dw.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/ps.png" width="80px"></div>
