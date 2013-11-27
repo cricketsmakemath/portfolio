@@ -48,10 +48,10 @@
 <body>
   <div id="menu" class="shadow_bottom">
     <ul>
-      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" class="menu_icon" /><br>Dan</a></div></li>
-      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" class="menu_icon" /><br>Developer</a></div></li>
-      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" class="menu_icon" /><br>Designer</a></div></li>
-      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" class="menu_icon" /><br>Contact</a></div></li>
+      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /><br>Dan</a></div></li>
+      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /><br>Developer</a></div></li>
+      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /><br>Designer</a></div></li>
+      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /><br>Contact</a></div></li>
     </ul>
   </div>
   <!-- Start Home Page -->
