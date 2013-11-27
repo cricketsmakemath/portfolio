@@ -54,13 +54,13 @@ input:focus, textarea:focus
 #wrapper 
 {
 	min-height: 100%; 
-
+	position: relative;
 }
 .content_cell_less_pad
 {
  	padding-top: 100px;
  	text-align: center;
- 	width: 1100px;
+ 	width: 1200px;
  	margin-left: auto;
  	margin-right: auto;
 }
@@ -90,6 +90,7 @@ input:focus, textarea:focus
     background-image: url('../img/tweed.png');
     background-repeat: repeat;
 	text-align: center;
+	z-index: 20;
 }
 #menu ul
 {
@@ -164,6 +165,7 @@ input:focus, textarea:focus
 {
 	background-image: url('../img/greyzz.jpg');
 	background-repeat: repeat;
+	z-index: 20;
 }
 .developer h1
 {
@@ -305,4 +307,17 @@ input:focus, textarea:focus
 	display: inline-block;
 	margin: 0px 4px 0px 4px;
 	border: 3px solid #003366;	
+}
+.dan 
+{
+	bottom: 0px;
+	z-index: 1;
+}
+.dan_container
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	z-index: 1;
 }

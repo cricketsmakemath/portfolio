@@ -56,6 +56,7 @@
   </div>
   <!-- Start Home Page -->
   <div id="wrapper" class="home"><a name="home"></a>
+    <div class="dan_container"><img class="dan" src="assets/img/dan.png"></div>
     <div class="content_cell_less_pad">
       <h1>Dan Stoeltzing</h1>   
       <h3>Web Designer &amp; Developer</h3>
