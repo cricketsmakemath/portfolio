@@ -8,12 +8,12 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
 
-    function positionDanOnResize()
+    function positionDanOnLoad()
     {
       var scrollTop     = $(window).scrollTop(),
           elementOffset = $('.dan').offset().top,
           distance      = (elementOffset - scrollTop),
-          totalFromTop  = elementOffset + 252,
+          totalFromTop  = elementOffset + $('.dan').height(),
           windowHeight  = $( window ).height(),
           bottomOffset  = windowHeight - totalFromTop,
           marginBottom = bottomOffset * -1;
@@ -30,15 +30,31 @@
       }
     };
 
-    function positionDanOnScroll()
+    function positionDanOnScroll(initDan)
     {
+      var initialDanM = initDan.substring(0,initDan.length - 2);
       var scrollFromTop = $(window).scrollTop();
-      $('.dan').css({'margin-top':''+scrollFromTop+'px'});
-    };      
+      if(initialDanM < scrollFromTop)
+      {
+        $('.dan').css({'margin-top':''+scrollFromTop+'px'});      
+      }
+      else
+      {
+        $('.dan').css({'margin-top':''+initialDanM+'px'});
+      }
+    };
 
     $( document ).ready(function() {
-      positionDanOnResize();
 
+      //position Dan on load
+      positionDanOnLoad();
+      
+      // fire position Dan on scroll
+      var initialDanMargin = $('.dan').css('margin-top');
+      $(window).scroll(function() {
+          positionDanOnScroll(initialDanMargin);
+      });
+      
       // Menu hover effect
       $('.menu_link').hover(function() 
         {
@@ -65,17 +81,6 @@
           }
         }
       }); 
-
-      // fire position Dan on scroll
-      $(window).scroll(function() {
-          positionDanOnScroll();
-      });
-
-      // fire dan position on resize
-      $( window ).resize(function() {
-        positionDanOnResize();  
-      });
-
     });
     </script>
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
