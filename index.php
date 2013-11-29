@@ -36,6 +36,50 @@
         }
       });
     });
+
+    function positionDan()
+    {
+      var scrollTop     = $(window).scrollTop(),
+          elementOffset = $('.dan').offset().top,
+          distance      = (elementOffset - scrollTop),
+          totalFromTop  = elementOffset + 252,
+          windowHeight  = $( window ).height(),
+          bottomOffset  = windowHeight - totalFromTop,
+          marginBottom = bottomOffset * -1;
+
+      var marginAdjustment = 0;
+      if(bottomOffset < -20)
+      {
+        $('.dan').css({marginTop: '-='+marginBottom+'px'});
+        marginAdjustment = marginBottom + marginAdjustment;
+        console.log('Bottom offset negative: ' + bottomOffset)
+        console.log('move up' + marginAdjustment);
+      }
+      if(bottomOffset > 1)
+      {
+        $('.dan').css({marginTop: '-='+bottomOffset+'px'});
+        marginAdjustment = marginBottom + marginAdjustment;
+        console.log('Bottom offset over 1: ' + bottomOffset)
+        console.log('move up' + marginAdjustment);
+      }
+    };
+    var x = 1;
+    $(function(){
+      $(window).scroll(function() {
+          x++;
+          $('.dan').css({marginTop: '+='+x+'px'});
+      });
+    });
+
+    $( window ).resize(function() {
+      positionDan();  
+    });
+
+    $( document ).ready(function() {
+      positionDan();      
+    });
+
+
     </script>
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -58,7 +102,7 @@
   </div>
   <!-- Start Home Page -->
   <div id="wrapper" class="home"><a name="home"></a>
-    <div class="dan_container"><img class="dan" src="assets/img/dan.png"></div>
+    
     <div class="content_cell_less_pad">
       <h1>Dan Stoeltzing</h1>   
       <h3>Web Designer &amp; Developer</h3>
@@ -73,7 +117,8 @@
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
         <br><strong>- Another Person, Business Name</strong></p>
     
-    </div>      
+    </div>   
+    <div class="dan_container"> <img class="dan" src="assets/img/dan.png">  </div>
   </div>
   <!-- End Home Page -->
   <!-- Start Developer Page -->

@@ -12,14 +12,15 @@ html, body
 p
 {
 	font-family: "mostra-nuova";
-	font-size: 1.7em;
+	font-size: 1.6em;
+	z-index: 100;
 }
 h1
 {
 	margin: 40px 0px 0px 0px;
 	padding: 0px;
 	font-family: "teeshirt";
-	font-size: 7em;
+	font-size: 6em;
 }
 h3
 {
@@ -56,7 +57,9 @@ input:focus, textarea:focus
 #wrapper 
 {
 	min-height: 100%; 
+	max-height: 100%;
 	position: relative;
+	overflow: hidden;
 }
 .content_cell_less_pad
 {
@@ -161,6 +164,10 @@ input:focus, textarea:focus
 	font-size: 3em;
 	color: #3d454c;
 	margin: 15px;
+}
+.home p
+{
+	text-shadow: 1px 1px 20px rgba(225, 246, 255, 1);
 }
 
 /* Developer page */
@@ -295,7 +302,15 @@ input:focus, textarea:focus
 	margin: 0px 4px 0px 4px;
 	border: 3px solid #003366;	
 }
-.dan 
+.dan
+{
+}
+.dan_container
+{
+	width: 100%;
+	text-align: center;
+}
+/*.dan 
 {
 	bottom: 0px;
 	z-index: 1;
@@ -307,220 +322,4 @@ input:focus, textarea:focus
 	bottom: 0px;
 	text-align: center;
 	z-index: 1;
-}
-
-/* Height adjustments */
-@media (max-height: 1010px) {
-	p 
-	{
-		font-size: 1.5em;
-	}
-	.home h1
-	{
-		margin-top: 50px;
-	}
-}
-
-@media (max-height: 920px) {
-	h1
-	{
-		font-size: 5em;
-	}
-	.home h3
-	{
-		font-size: 2.5em;
-	}
-	.skill_circle 
-	{
-		height: 100px;
-		width: 100px;
-	}
-	.skill_circle img
-	{
-		width: 60px;
-	}
-	.developer h1
-	{
-		margin-top: 30px;
-	}
-	.developer h3
-	{
-		font-size: 1.5em;
-	}
-}
-
-@media (max-height: 860px) {
-	#menu
-	{
-		height: 90px;
-	}
-	#menu ul
-	{
-		margin-top: 0px;
-	}
-	#menu a
-	{
-		font-size: 1.5em;
-	}
-	.home h1
-	{
-		margin-top: 0px;
-	}
-	.designer h1
-	{
-		margin-top: 0px;
-	}
-	.designer h3
-	{
-		margin: 0px;
-	}
-	.contact h1
-	{
-		font-size: 4em;
-		margin-top: 0px;
-	}
-	.dan_container img
-	{
-		width: 250px;
-	}
-	.skill_circle 
-	{
-		height: 95px;
-		width: 95px;
-	}
-	.skill_circle img
-	{
-		width: 55px;
-	}
-	.portfolio_screenshot
-	{
-		width: 230px;
-	}
-	.portfolio_screenshot img
-	{
-		width: 200px;
-	}
-	input
-	{
-		font-size: 1em;
-	}
-	textarea
-	{
-		font-size: 1em;
-	}
-}
-@media (max-height: 815px) {
-	h1
-	{
-		font-size: 4em;
-	}
-	p
-	{
-		font-size: 1.4em;
-	}
-	#menu
-	{
-		height: 80px;
-	}
-	#menu img
-	{
-		width: 20px;
-	}
-	.content_cell_less_pad
-	{
-		padding-top: 90px
-	}
-	.dan_container img
-	{
-		width: 150px;
-	}
-}
-@media (max-height: 720px) {
-	h1
-	{
-		font-size: 3em;
-	}
-	.home h3
-	{
-		font-size: 2.1em;
-	}
-	.dan_container img
-	{
-		width: 150px;
-	}
-	.sep_circle
-	{
-		width: 5px;
-		height: 5px;
-	}
-}
-@media (max-height: 625px) {
-	.dan_container
-	{
-		display: none;
-	}
-}
-
-/* Width adjustments */
-@media (max-width: 1212px) {
-	.content_cell_less_pad
-	{
-		width: 97%;
-	}
-	.dan_container img
-	{
-		width: 180px;
-	}
-}
-@media (max-width: 1092px) {
-	h1
-	{
-		font-size: 5em;
-	}
-}
-@media (max-width: 887px) {
-	.dan_container img
-	{
-		width: 170px;
-	}
-}
-@media (max-width: 775px) {
-	h1
-	{
-		font-size: 2.5em;
-	}
-	.home h3
-	{
-		font-size: 2.3em;
-	}
-	.dan_container img
-	{
-		width: 150px;
-	}
-}
-@media (max-width: 555px) {
-	.dan_container
-	{
-		display: none;
-	}
-}
-
-/* Both dimension adjustments */
-@media (max-width: 1118px), and (max-height: 626px) {
-	.dan_container img
-	{
-		width: 120px;
-	}
-}
-@media (max-width: 747px), and (max-height: 637px) {
-	.dan_container img
-	{
-		width: 80px;
-	}
-}
-@media (max-width: 494px), and (max-height: 788px) {
-	.dan_container
-	{
-		display: none;
-	}
-}
+}*/
