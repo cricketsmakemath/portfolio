@@ -1,0 +1,61 @@
+@media (max-width: 1280px), and (max-height: 800px) {
+
+/* Global styles */
+h1
+{
+	font-size: 5em;
+}
+p
+{
+	font-size: 1.5em;
+}
+
+/* Sections */
+#menu
+{
+	height: 100px;
+}
+#menu ul
+{
+	margin-top: 0px;
+}
+#menu img
+{
+	width: 30px;
+}
+#menu a 
+{
+	font-size: 2em;
+}
+.content_cell_less_pad
+{
+	padding-top: 50px;
+	width: 90%;
+}
+
+/* Page specific styles */
+.home h3
+{
+	font-size: 2.2em;
+}
+.designer h1
+{
+	margin-top: 70px;
+}
+.contact h1
+{
+	margin-top: 70px;
+}
+
+/* Componenets */
+.sep_circle
+{
+	width: 5px;
+	height: 5px;	
+}
+.dan
+{
+	width: 200px;
+}
+
+}

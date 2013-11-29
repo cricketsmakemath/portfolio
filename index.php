@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/1366x768.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/1280x800.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/1024x768.css">
+
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
     // Menu hover effect
@@ -12,12 +16,12 @@
           $('.menu_link').hover(function() 
           {
               var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
+               $(anchor).find( "img" ).stop( true, true ).animate({"margin-bottom":"10px"}, 200);            
           }, 
           function() 
           {
               var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
+               $(anchor).find( "img" ).stop( true, true ).animate({"margin-bottom":"0px"}, 100);            
            }
         );
     });
