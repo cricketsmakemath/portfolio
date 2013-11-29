@@ -25,7 +25,7 @@
       }
       if(bottomOffset > 1)
       {
-        $('.dan').css({marginTop: '+='+bottomOffset+'px'});
+        $('.dan').css({'margin': '+='+bottomOffset+'px'});
         marginAdjustment = marginBottom + marginAdjustment;
       }
     };
