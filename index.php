@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Dan Stoeltzing: Web Developer, Web Designer, Producer</title>
@@ -7,81 +8,77 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
-
-    function positionDanOnLoad()
-    {
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $('.dan').offset().top,
-          distance      = (elementOffset - scrollTop),
-          totalFromTop  = elementOffset + $('.dan').height(),
-          windowHeight  = $( window ).height(),
-          bottomOffset  = windowHeight - totalFromTop,
-          marginBottom = bottomOffset * -1;
-      var marginAdjustment = 0;
-      if(bottomOffset < -20)
+      function positionDanOnLoad()
       {
-        $('.dan').css({'margin-top': '-='+marginBottom+'px'});
-        marginAdjustment = marginBottom + marginAdjustment;
-      }
-      if(bottomOffset > 1)
-      {
-        $('.dan').css({'margin-top': '+='+bottomOffset+'px'});
-        marginAdjustment = marginBottom + marginAdjustment;
-      }
-    };
-
-    function positionDanOnScroll(initDan)
-    {
-      var initialDanM = initDan.substring(0,initDan.length - 2);
-      var scrollFromTop = $(window).scrollTop();
-      if(initialDanM < scrollFromTop)
-      {
-        $('.dan').css({'margin-top':''+scrollFromTop+'px'});      
-      }
-      else
-      {
-        $('.dan').css({'margin-top':''+initialDanM+'px'});
-      }
-    };
-
-    $( document ).ready(function() {
-
-      //position Dan on load
-      positionDanOnLoad();
-      
-      // fire position Dan on scroll
-      var initialDanMargin = $('.dan').css('margin-top');
-      $(window).scroll(function() {
-          positionDanOnScroll(initialDanMargin);
-      });
-      
-      // Menu hover effect
-      $('.menu_link').hover(function() 
+        var scrollTop     = $(window).scrollTop();
+            elementOffset = $('.dan').offset().top,
+            distance      = (elementOffset - scrollTop),
+            totalFromTop  = elementOffset + $('.dan').height(),
+            windowHeight  = $( window ).height(),
+            bottomOffset  = windowHeight - totalFromTop,
+            marginBottom = bottomOffset;
+        if(bottomOffset < 0)
         {
-            var anchor = this;
-             $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
-        }, 
-        function() 
-        {
-            var anchor = this;
-             $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
+          $('.dan').css({'margin-top': '+='+marginBottom+'px'});
         }
-      );
+        if(bottomOffset > 0)
+        {
+          $('.dan').css({'margin-top': '+='+bottomOffset+'px'});
+        }
+      };
 
-      // Document scroll effect
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 800);
-            return false;
+      function positionDanOnScroll(initDan)
+      {
+        var initialDanM = initDan.substring(0,initDan.length - 2);
+        console.log(initialDanM);
+        var scrollFromTop = $(window).scrollTop();
+        if(initialDanM < scrollFromTop)
+        {
+          $('.dan').css({'margin-top': scrollFromTop+'px'});      
+        }
+        else
+        {
+          $('.dan').css({'margin-top': initialDanM+'px'});
+        }
+      };
+
+      $( document ).ready(function() {
+        //position Dan on load
+        danSrc = $(".dan").attr("src");
+        myImge = $(".dan").attr("src", danSrc + "?" + new Date().getTime());
+        $('img.dan').load(function() {
+          positionDanOnLoad();
+          var initialDanMargin = $('.dan').css('margin-top');
+          $(window).scroll(function() {            
+              positionDanOnScroll(initialDanMargin);
+          });
+        });
+        // Menu hover effect
+        $('.menu_link').hover(function() 
+          {
+              var anchor = this;
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
+          }, 
+          function() 
+          {
+              var anchor = this;
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
           }
-        }
-      }); 
-    });
+        );
+        // Document scroll effect
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 800);
+              return false;
+            }
+          }
+        }); 
+      });
     </script>
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -205,7 +202,7 @@
           <input type="submit" name="submit" value="Send"> 
         </form>
       </div>
-      </form>
+    
     </div>
   </div>
   <!-- End Contact Page -->
