@@ -7,37 +7,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
-    // Menu hover effect
-    $(function() {      
-          $('.menu_link').hover(function() 
-          {
-              var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
-          }, 
-          function() 
-          {
-              var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
-           }
-        );
-    });
-    //Scroll effect
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 800);
-            return false;
-          }
-        }
-      });
-    });
 
-    function positionDan()
+    function positionDanOnResize()
     {
       var scrollTop     = $(window).scrollTop(),
           elementOffset = $('.dan').offset().top,
@@ -63,23 +34,54 @@
         console.log('move up' + marginAdjustment);
       }
     };
-    var x = 1;
-    $(function(){
-      $(window).scroll(function() {
-          x++;
-          $('.dan').css({marginTop: '+='+x+'px'});
-      });
-    });
 
-    $( window ).resize(function() {
-      positionDan();  
-    });
+    function positionDanOnScroll()
+    {
+      var scrollFromTop = $(window).scrollTop();
+      $('.dan').css({'margin-top':''+scrollFromTop+'px'});
+    };      
 
     $( document ).ready(function() {
-      positionDan();      
+      positionDanOnResize();
+
+      // Menu hover effect
+      $('.menu_link').hover(function() 
+        {
+            var anchor = this;
+             $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
+        }, 
+        function() 
+        {
+            var anchor = this;
+             $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
+        }
+      );
+
+      // Document scroll effect
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 800);
+            return false;
+          }
+        }
+      }); 
+
+      // fire position Dan on scroll
+      $(window).scroll(function() {
+          positionDanOnScroll();
+      });
+
+      // fire dan position on resize
+      $( window ).resize(function() {
+        positionDanOnResize();  
+      });
+
     });
-
-
     </script>
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
