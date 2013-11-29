@@ -20,12 +20,12 @@
       var marginAdjustment = 0;
       if(bottomOffset < -20)
       {
-        $('.dan').css({'margin': '-='+marginBottom+'px'});
+        $('.dan').css({'margin-top': '-='+marginBottom+'px'});
         marginAdjustment = marginBottom + marginAdjustment;
       }
       if(bottomOffset > 1)
       {
-        $('.dan').css({'margin': '+='+bottomOffset+'px'});
+        $('.dan').css({'margin-top': '+='+bottomOffset+'px'});
         marginAdjustment = marginBottom + marginAdjustment;
       }
     };

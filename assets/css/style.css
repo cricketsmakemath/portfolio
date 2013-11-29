@@ -310,16 +310,3 @@ input:focus, textarea:focus
 	width: 100%;
 	text-align: center;
 }
-/*.dan 
-{
-	bottom: 0px;
-	z-index: 1;
-}
-.dan_container
-{
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
-	text-align: center;
-	z-index: 1;
-}*/
