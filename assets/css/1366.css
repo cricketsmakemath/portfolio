@@ -29,6 +29,7 @@
   .content_cell_less_pad
   {
   	padding-top: 50px;
+    width: 90%;
   }
 
   /*Page specific styles*/
@@ -60,4 +61,75 @@
   {
   	width: 50px;
   }
+}
+
+@media screen and (max-width: 800px) , screen and (max-height: 600px) {
+  #menu ul
+  {
+    width: 700px;
+  }
+  #menu ul li
+  {
+    width: 150px;
+  }
+  p
+  {
+    font-size: 1.2em;
+  }
+  .sep_circle
+  {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+ p
+ {
+  font-size: 1.6em;
+ }
+ #wrapper
+ {
+  overflow: visible;
+  max-height: 5000px;
+ }
+ .sep_circle
+  {
+    display: inline-block;
+  }
+  .dan
+  {
+    display: none;
+  }
+  #menu
+  {
+    display: none;
+  }
+ 
+  #mobile_menu
+{
+  display: block;
+  position: fixed;
+    left: 0;
+    top: 0;
+     width: 100%;
+    background-image: url('../img/tweed.png');
+    background-repeat: repeat;
+  text-align: center;
+  z-index: 200;
+}
+#mobile_menu ul
+{
+  padding: 0px;
+  margin: 20px 0px 20px 0px;
+  bottom: 0px;
+}
+
+#mobile_menu ul li
+{
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px;
+  width: 20%;
+}
 }

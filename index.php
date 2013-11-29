@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/1366.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/1024.css">
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
       function positionDanOnLoad()
@@ -100,6 +101,14 @@
       <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /><br>Developer</a></div></li>
       <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /><br>Designer</a></div></li>
       <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /><br>Contact</a></div></li>
+    </ul>
+  </div>
+  <div id="mobile_menu" class="shadow_bottom">
+    <ul>
+      <li><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /></a></li>
     </ul>
   </div>
   <!-- Start Home Page -->
