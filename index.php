@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Dan Stoeltzing: Web Developer, Web Designer, Producer</title>
@@ -5,78 +6,83 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/1366.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/1024.css">
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
-
-    function positionDanOnResize()
-    {
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $('.dan').offset().top,
-          distance      = (elementOffset - scrollTop),
-          totalFromTop  = elementOffset + 252,
-          windowHeight  = $( window ).height(),
-          bottomOffset  = windowHeight - totalFromTop,
-          marginBottom = bottomOffset * -1;
-      var marginAdjustment = 0;
-      if(bottomOffset < -20)
+      function positionDanOnLoad()
       {
-        $('.dan').css({'margin-top': '-='+marginBottom+'px'});
-        marginAdjustment = marginBottom + marginAdjustment;
-      }
-      if(bottomOffset > 1)
-      {
-        $('.dan').css({'margin-top': '+='+bottomOffset+'px'});
-        marginAdjustment = marginBottom + marginAdjustment;
-      }
-    };
-
-    function positionDanOnScroll()
-    {
-      var scrollFromTop = $(window).scrollTop();
-      $('.dan').css({'margin-top':''+scrollFromTop+'px'});
-    };      
-
-    $( document ).ready(function() {
-      positionDanOnResize();
-
-      // Menu hover effect
-      $('.menu_link').hover(function() 
+        var scrollTop     = $(window).scrollTop();
+            elementOffset = $('.dan').offset().top,
+            distance      = (elementOffset - scrollTop),
+            totalFromTop  = elementOffset + $('.dan').height(),
+            windowHeight  = $( window ).height(),
+            bottomOffset  = windowHeight - totalFromTop,
+            marginBottom = bottomOffset;
+        if(bottomOffset < 0)
         {
-            var anchor = this;
-             $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
-        }, 
-        function() 
-        {
-            var anchor = this;
-             $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
+          $('.dan').css({'margin-top': marginBottom+'px'});
         }
-      );
+        if(bottomOffset > 0)
+        {
+          $('.dan').css({'margin-top': bottomOffset+'px'});
+        }
+      };
 
-      // Document scroll effect
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 800);
-            return false;
+      function positionDanOnScroll(initDan)
+      {
+        var initialDanM = initDan.substring(0,initDan.length - 2);
+        var scrollFromTop = $(window).scrollTop();
+        if(initialDanM < scrollFromTop)
+        {
+          $('.dan').css({'margin-top': scrollFromTop+'px'});      
+        }
+        else
+        {
+          $('.dan').css({'margin-top': initialDanM+'px'});
+        }
+      };
+
+      $( document ).ready(function() {
+        //position Dan on load
+        danSrc = $(".dan").attr("src");
+        myImge = $(".dan").attr("src", danSrc + "?" + new Date().getTime());
+        $('img.dan').load(function() {
+          positionDanOnLoad();
+          var initialDanMargin = $('.dan').css('margin-top');
+          $(window).scroll(function() {            
+              positionDanOnScroll(initialDanMargin);
+          });
+          $(window).resize(function(event) {
+              $('img.dan').fadeOut('slow', function() {});
+          });
+        });
+        // Menu hover effect
+        $('.menu_link').hover(function() 
+          {
+              var anchor = this;
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
+          }, 
+          function() 
+          {
+              var anchor = this;
+               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
           }
-        }
-      }); 
-
-      // fire position Dan on scroll
-      $(window).scroll(function() {
-          positionDanOnScroll();
+        );
+        // Document scroll effect
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 800);
+              return false;
+            }
+          }
+        }); 
       });
-
-      // fire dan position on resize
-      $( window ).resize(function() {
-        positionDanOnResize();  
-      });
-
-    });
     </script>
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -95,6 +101,14 @@
       <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /><br>Developer</a></div></li>
       <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /><br>Designer</a></div></li>
       <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /><br>Contact</a></div></li>
+    </ul>
+  </div>
+  <div id="mobile_menu" class="shadow_bottom">
+    <ul>
+      <li><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /></a></li>
     </ul>
   </div>
   <!-- Start Home Page -->
@@ -200,7 +214,7 @@
           <input type="submit" name="submit" value="Send"> 
         </form>
       </div>
-      </form>
+    
     </div>
   </div>
   <!-- End Contact Page -->
