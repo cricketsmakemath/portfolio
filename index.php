@@ -17,21 +17,16 @@
           windowHeight  = $( window ).height(),
           bottomOffset  = windowHeight - totalFromTop,
           marginBottom = bottomOffset * -1;
-
       var marginAdjustment = 0;
       if(bottomOffset < -20)
       {
-        $('.dan').css({marginTop: '-='+marginBottom+'px'});
+        $('.dan').css({'margin': '-='+marginBottom+'px'});
         marginAdjustment = marginBottom + marginAdjustment;
-        console.log('Bottom offset negative: ' + bottomOffset)
-        console.log('move up' + marginAdjustment);
       }
       if(bottomOffset > 1)
       {
-        $('.dan').css({marginTop: '-='+bottomOffset+'px'});
+        $('.dan').css({marginTop: '+='+bottomOffset+'px'});
         marginAdjustment = marginBottom + marginAdjustment;
-        console.log('Bottom offset over 1: ' + bottomOffset)
-        console.log('move up' + marginAdjustment);
       }
     };
 
