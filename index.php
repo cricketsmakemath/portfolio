@@ -19,18 +19,17 @@
             marginBottom = bottomOffset;
         if(bottomOffset < 0)
         {
-          $('.dan').css({'margin-top': '+='+marginBottom+'px'});
+          $('.dan').css({'margin-top': marginBottom+'px'});
         }
         if(bottomOffset > 0)
         {
-          $('.dan').css({'margin-top': '+='+bottomOffset+'px'});
+          $('.dan').css({'margin-top': bottomOffset+'px'});
         }
       };
 
       function positionDanOnScroll(initDan)
       {
         var initialDanM = initDan.substring(0,initDan.length - 2);
-        console.log(initialDanM);
         var scrollFromTop = $(window).scrollTop();
         if(initialDanM < scrollFromTop)
         {
@@ -51,6 +50,9 @@
           var initialDanMargin = $('.dan').css('margin-top');
           $(window).scroll(function() {            
               positionDanOnScroll(initialDanMargin);
+          });
+          $(window).resize(function(event) {
+              $('img.dan').fadeOut('slow', function() {});
           });
         });
         // Menu hover effect
