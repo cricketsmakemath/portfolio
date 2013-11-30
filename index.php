@@ -10,53 +10,43 @@
     <link rel="stylesheet" type="text/css" href="assets/css/1024.css">
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">
+
+      //position dan to bottom center
       function positionDanOnLoad()
       {
-        var scrollTop     = $(window).scrollTop();
-            elementOffset = $('.dan').offset().top,
-            distance      = (elementOffset - scrollTop),
-            totalFromTop  = elementOffset + $('.dan').height(),
-            windowHeight  = $( window ).height(),
-            bottomOffset  = windowHeight - totalFromTop,
-            marginBottom = bottomOffset;
-        if(bottomOffset < 0)
-        {
-          $('.dan').css({'margin-top': marginBottom+'px'});
-        }
-        if(bottomOffset > 0)
-        {
-          $('.dan').css({'margin-top': bottomOffset+'px'});
-        }
+        var dan = $('img.dan');
+        var bottomOffset = $(window).height() - (dan.offset().top + dan.height());
+        var topOffset    = dan.offset().top + bottomOffset;
+        var leftOffset   = ($(window).width() - dan.width()) * 0.5;
+        dan.offset({top: topOffset, left: leftOffset});
       };
 
-      function positionDanOnScroll(initDan)
+      //move dan on scroll      
+      function positionDanOnScroll()
       {
-        var initialDanM = initDan.substring(0,initDan.length - 2);
-        var scrollFromTop = $(window).scrollTop();
-        if(initialDanM < scrollFromTop)
-        {
-          $('.dan').css({'margin-top': scrollFromTop+'px'});      
-        }
-        else
-        {
-          $('.dan').css({'margin-top': initialDanM+'px'});
-        }
+        var dan = $('img.dan');
+        var bottomOffset = $(window).height() - (dan.offset().top + dan.height());
+        var topOffset    = dan.offset().top + bottomOffset + $(window).scrollTop();
+        dan.offset({top: topOffset});
       };
 
       $( document ).ready(function() {
-        //position Dan on load
+        
+        // IE HACK: trigger .load on dan
         danSrc = $(".dan").attr("src");
         myImge = $(".dan").attr("src", danSrc + "?" + new Date().getTime());
+
+        //position Dan on load
         $('img.dan').load(function() {
           positionDanOnLoad();
-          var initialDanMargin = $('.dan').css('margin-top');
-          $(window).scroll(function() {            
-              positionDanOnScroll(initialDanMargin);
+          $(window).scroll(function() {                        
+            positionDanOnScroll();
           });
           $(window).resize(function(event) {
-              $('img.dan').fadeOut('slow', function() {});
+             positionDanOnLoad();
           });
         });
+
         // Menu hover effect
         $('.menu_link').hover(function() 
           {
@@ -69,6 +59,7 @@
                $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
           }
         );
+
         // Document scroll effect
         $('a[href*=#]:not([href=#])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -82,6 +73,7 @@
             }
           }
         }); 
+
       });
     </script>
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>

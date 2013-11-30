@@ -100,7 +100,7 @@ input:focus, textarea:focus
     background-image: url('../img/tweed.png');
     background-repeat: repeat;
 	text-align: center;
-	z-index: 200;
+	z-index: 600;
 }
 #menu ul
 {
@@ -170,7 +170,9 @@ input:focus, textarea:focus
 }
 .home p
 {
-	text-shadow: 1px 1px 20px rgba(225, 246, 255, 1);
+	text-shadow: 2px 2px 10px rgba(225, 246, 255, 1);
+	z-index: 300;
+	position: relative;
 }
 
 /* Developer page */
@@ -304,9 +306,12 @@ input:focus, textarea:focus
 	display: inline-block;
 	margin: 0px 4px 0px 4px;
 	border: 3px solid #003366;	
+	position: relative;
+	z-index: 200;
 }
 .dan
 {
+	z-index: 1;
 }
 .dan_container
 {
