@@ -118,7 +118,7 @@
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
-        <br><strong>- Another Person, Business Name</strong></p>
+        <br><strong>- Another Person, Business Name</strong></p><br><br>
     
     </div>   
     <div class="dan_container"> <img class="dan" src="assets/img/dan.png">  </div>
@@ -148,7 +148,7 @@
         <div class="skill_circle"><img src="assets/img/logos/linux.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/node.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/mongo.png" width="80px"></div>    
-      </div>
+      </div><br><br>
     </div>
 
   </div>
@@ -184,7 +184,7 @@
         <p>Crickets Make Math</p>
       </div>
       <br><br>
-      <h3>And of course, this portfolio site...</h3>
+      <h3>And of course, this portfolio site...</h3><br><br>
     </div>
   </div>
   <!-- End Designer Page -->
@@ -196,16 +196,16 @@
       <div id="contact_form_container">
         <form name="contact_form">
           <p><strong>Name</strong></p>
-          <input type="text" name="name" size="50">
+          <input type="text" name="name">
           <p><strong>Email Address</strong></p>
           <p class="meta">I solemnly swear not to share, sell or spam it!</p>
-          <input type="text" name="name" size="50">
+          <input type="text" name="name">
           <p><strong>Message</strong></p>
-          <textarea name="message" rows="3" cols="60"></textarea>
+          <textarea name="message"></textarea>
           <p></p>
           <input type="submit" name="submit" value="Send"> 
         </form>
-      </div>
+      </div><br><br>
     
     </div>
   </div>

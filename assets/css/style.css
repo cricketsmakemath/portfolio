@@ -41,10 +41,12 @@ input, textarea
 input
 {
 	text-align: center;
+	width: 70%;
 }
 textarea
 {
 	text-align: left;
+	width: 70%;
 }
 input:focus, textarea:focus
 {
@@ -59,12 +61,13 @@ input:focus, textarea:focus
 	min-height: 100%; 
 	max-height: 100%;
 	position: relative;
+}
+
+#wrapper.home
+{
 	overflow: hidden;
 }
-#mobile_menu
-{
-	display: none;
-}
+
 .content_cell_less_pad
 {
  	padding-top: 100px;
@@ -101,6 +104,10 @@ input:focus, textarea:focus
     background-repeat: repeat;
 	text-align: center;
 	z-index: 600;
+}
+#mobile_menu
+{
+	display: none;
 }
 #menu ul
 {
@@ -201,6 +208,7 @@ input:focus, textarea:focus
 {
 	background-image: url('../img/old_moon.jpg');
 	background-repeat: repeat;
+	z-index: 20;
 }
 .designer h1
 {
@@ -224,6 +232,7 @@ input:focus, textarea:focus
 {
 	background-image: url('../img/squairy_light.jpg');
 	background-repeat: repeat;
+	z-index: 20;
 }
 .contact h1
 {

@@ -6,13 +6,13 @@
   }
   p
   {
-  	font-size: 1.3em;
+  	font-size: 1.4em;
   }
 
   /*Sections*/
   #menu
   {
-  	height: 100px;  	
+  	height: 90px;  	
   }
   #menu ul
   {
@@ -45,7 +45,7 @@
   /*Components*/
   .dan
   {
-  	width: 140px;
+  	width: 180px;
   }
   .sep_circle
   {
@@ -83,7 +83,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
  p
  {
   font-size: 1.6em;
@@ -92,10 +92,15 @@
  {
   overflow: visible;
   max-height: 5000px;
+  min-width: 100%;
  }
  .sep_circle
   {
     display: inline-block;
+  }
+  .home
+  {
+    margin-bottom: 0px;
   }
 
   #menu
@@ -104,29 +109,52 @@
   }
  
   #mobile_menu
-{
-  display: block;
-  position: fixed;
+  {
+    display: block;
+    position: fixed;
     left: 0;
     top: 0;
-     width: 100%;
+    width: 100%;
     background-image: url('../img/tweed.png');
     background-repeat: repeat;
-  text-align: center;
-  z-index: 200;
-}
-#mobile_menu ul
-{
-  padding: 0px;
-  margin: 20px 0px 20px 0px;
-  bottom: 0px;
+    text-align: center;
+    z-index: 600;
+  }
+  #mobile_menu ul
+  {
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
+    bottom: 0px;
+  }
+
+  #mobile_menu ul li
+  {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    width: 20%;
+  }
+  .portfolio_screenshot
+  {
+    width: 90%;    
+  }
+  .portfolio_screenshot img
+  {
+    width: 80%;
+  }
 }
 
-#mobile_menu ul li
-{
-  display: inline-block;
-  list-style-type: none;
-  margin: 0px;
-  width: 20%;
-}
+@media screen and (max-width: 650px) {
+  h1
+  {
+    font-size: 2em;
+  }
+  .home h3
+  {
+    font-size: 1.8em;
+  }
+  .dan_container
+  {
+    display: none;
+  }
 }
