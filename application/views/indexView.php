@@ -28,7 +28,7 @@
   <!-- Start Home Page -->
   <div id="wrapper" class="home"><a name="home"></a>
     
-    <div class="content_cell_less_pad">
+    <div class="content_cell_less_pad" id="home_content_cell">
       <h1>Dan Stoeltzing</h1>   
       <h3>Web Designer &amp; Developer</h3>
       
@@ -43,7 +43,7 @@
         <br><strong>- Another Person, Business Name</strong></p><br><br>
     
     </div>   
-    <div class="dan_container"> <img class="dan" src="assets/img/dan.png">  </div>
+    <div class="dan_container"> <img class="dan" src="assets/img/dan.png" id="dan">  </div>
   </div>
   <!-- End Home Page -->
   <!-- Start Developer Page -->

@@ -1,13 +1,18 @@
 //position dan to bottom center
 function positionDanOnLoad()
 {
+  //position image
   var dan = $('img.dan');
   var bottomOffset = $(window).height() - (dan.offset().top + dan.height());
   var topOffset    = dan.offset().top + bottomOffset;
   var leftOffset   = ($(window).width() - dan.width()) * 0.5;
   dan.offset({top: topOffset, left: leftOffset});
+  //lower opacity if overlap occurs
+  contentBottomOffset = $(window).height() - ($('#home_content_cell').offset().top + $('#home_content_cell').height());
+  if(contentBottomOffset < (dan.height() - 100)){dan.fadeTo('400', 0.7);}
+  else{dan.fadeTo('400', 1);}
 };
-
+  
 //move dan on scroll      
 function positionDanOnScroll()
 {
@@ -41,13 +46,13 @@ $( document ).ready(function() {
   // Menu hover effect
   $('.menu_link').hover(function() 
     {
-        var anchor = this;
-         $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
+      var anchor = this;
+      $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
     }, 
     function() 
     {
-        var anchor = this;
-         $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
+      var anchor = this;
+      $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
     }
   );
 
