@@ -183,7 +183,7 @@
         <img src="assets/img/screenshots/cmm.jpg"><br>
         <p>Crickets Make Math</p>
       </div>
-      <br><br>
+      
       <h3>And of course, this portfolio site...</h3><br><br>
     </div>
   </div>
