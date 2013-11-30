@@ -5,11 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
     <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <?php $this->carabiner->display('both'); ?>
 </head>
 <body>
   <div id="menu" class="shadow_bottom">
