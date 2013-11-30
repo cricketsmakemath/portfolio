@@ -9,8 +9,8 @@ function positionDanOnLoad()
   dan.offset({top: topOffset, left: leftOffset});
   //lower opacity if overlap occurs
   contentBottomOffset = $(window).height() - ($('#home_content_cell').offset().top + $('#home_content_cell').height());
-  if(contentBottomOffset < (dan.height() - 100)){dan.fadeTo('400', 0.7);}
-  else{dan.fadeTo('400', 1);}
+  if(contentBottomOffset < (dan.height() - 40)){dan.css('opacity', '.7');}
+  else{if(dan.css('opacity') != '1'){dan.css('opacity', '1');}}
 };
   
 //move dan on scroll      
@@ -24,7 +24,6 @@ function positionDanOnScroll()
 
 //doc load
 $( document ).ready(function() {
-
   //load typekit
   try{Typekit.load();}catch(e){}
 

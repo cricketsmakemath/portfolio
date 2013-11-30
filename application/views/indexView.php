@@ -51,7 +51,7 @@
     <div class="content_cell_less_pad">
       <h1>Web Devloper</h1>
       <p>I am a meticulous web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
-      <h3>These are some of the things I'm skilled in</h3>
+      <p><strong>These are some of the tools I use to make awesome web applications.</strong></p>
       <div id="skills">
         <div class="skill_circle"><img src="assets/img/logos/html.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/css.png" width="80px"></div>
@@ -65,12 +65,8 @@
         <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/git.png" width="80px"></div>        
       </div>
-      <h3>These are some of the things I'm learning</h3>
-      <div id="skills">
-        <div class="skill_circle"><img src="assets/img/logos/linux.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/node.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/mongo.png" width="80px"></div>    
-      </div><br><br>
+      <p><a href=""><strong>Click Here to read about some projects I've done.</strong></a></p>
+      <br><br>
     </div>
 
   </div>
