@@ -9,7 +9,7 @@ function positionDanOnLoad()
   dan.offset({top: topOffset, left: leftOffset});
   //lower opacity if overlap occurs
   contentBottomOffset = $(window).height() - ($('#home_content_cell').offset().top + $('#home_content_cell').height());
-  if(contentBottomOffset < (dan.height() - 40)){dan.css('opacity', '.7');}
+  if(contentBottomOffset < (dan.height() - 40)){dan.css('opacity', '.6');}
   else{if(dan.css('opacity') != '1'){dan.css('opacity', '1');}}
 };
   
@@ -24,6 +24,7 @@ function positionDanOnScroll()
 
 //doc load
 $( document ).ready(function() {
+
   //load typekit (ASSYNCRONOUSLY)
   (function() {
     var config = {
@@ -33,7 +34,7 @@ $( document ).ready(function() {
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 
-  // IE HACK: trigger .load on dan
+  //IE HACK: trigger .load on dan
   danSrc = $(".dan").attr("src");
   myImge = $(".dan").attr("src", danSrc + "?" + new Date().getTime());
 

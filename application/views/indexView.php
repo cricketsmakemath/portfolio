@@ -64,7 +64,7 @@
         <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/git.png" width="80px"></div>        
       </div>
-      <p><a href=""><strong>Click Here to read about some projects I've done.</strong></a></p>
+      <p><a href=""><strong>Click Here to read about some projects I've taken part in.</strong></a></p>
       <br><br>
     </div>
 
