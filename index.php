@@ -1,215 +1,205 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dan Stoeltzing: Web Developer, Web Designer, Producer</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/1366.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/1024.css">
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript">
+<?php
 
-      //position dan to bottom center
-      function positionDanOnLoad()
-      {
-        var dan = $('img.dan');
-        var bottomOffset = $(window).height() - (dan.offset().top + dan.height());
-        var topOffset    = dan.offset().top + bottomOffset;
-        var leftOffset   = ($(window).width() - dan.width()) * 0.5;
-        dan.offset({top: topOffset, left: leftOffset});
-      };
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ *
+ */
+	define('ENVIRONMENT', 'development');
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
 
-      //move dan on scroll      
-      function positionDanOnScroll()
-      {
-        var dan = $('img.dan');
-        var bottomOffset = $(window).height() - (dan.offset().top + dan.height());
-        var topOffset    = dan.offset().top + bottomOffset + $(window).scrollTop();
-        dan.offset({top: topOffset});
-      };
+if (defined('ENVIRONMENT'))
+{
+	switch (ENVIRONMENT)
+	{
+		case 'development':
+			error_reporting(E_ALL);
+		break;
+	
+		case 'testing':
+		case 'production':
+			error_reporting(0);
+		break;
 
-      $( document ).ready(function() {
-        
-        // IE HACK: trigger .load on dan
-        danSrc = $(".dan").attr("src");
-        myImge = $(".dan").attr("src", danSrc + "?" + new Date().getTime());
+		default:
+			exit('The application environment is not set correctly.');
+	}
+}
 
-        //position Dan on load
-        $('img.dan').load(function() {
-          positionDanOnLoad();
-          $(window).scroll(function() {                        
-            positionDanOnScroll();
-          });
-          $(window).resize(function(event) {
-             positionDanOnLoad();
-          });
-        });
+/*
+ *---------------------------------------------------------------
+ * SYSTEM FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" folder.
+ * Include the path if the folder is not in the same  directory
+ * as this file.
+ *
+ */
+	$system_path = 'system';
 
-        // Menu hover effect
-        $('.menu_link').hover(function() 
-          {
-              var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"10px"}, 200);            
-          }, 
-          function() 
-          {
-              var anchor = this;
-               $(anchor).stop( true, true ).find( "img" ).animate({"margin-bottom":"0px"}, 100);            
-          }
-        );
+/*
+ *---------------------------------------------------------------
+ * APPLICATION FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * folder then the default one you can set its name here. The folder
+ * can also be renamed or relocated anywhere on your server.  If
+ * you do, use a full server path. For more info please see the user guide:
+ * http://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ *
+ */
+	$application_folder = 'application';
 
-        // Document scroll effect
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 800);
-              return false;
-            }
-          }
-        }); 
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here.  For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT:  If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller.  Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ *
+ */
+	// The directory name, relative to the "controllers" folder.  Leave blank
+	// if your controller is not in a sub-folder within the "controllers" folder
+	// $routing['directory'] = '';
 
-      });
-    </script>
-    <script type="text/javascript" src="//use.typekit.net/vqc2huv.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <!--[if lte IE 6]>
-    <style type="text/css">
-      #container {
-        height: 100%;
-      }
-    </style>
-    <![endif]-->
-</head>
-<body>
-  <div id="menu" class="shadow_bottom">
-    <ul>
-      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /><br>Dan</a></div></li>
-      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /><br>Developer</a></div></li>
-      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /><br>Designer</a></div></li>
-      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /><br>Contact</a></div></li>
-    </ul>
-  </div>
-  <div id="mobile_menu" class="shadow_bottom">
-    <ul>
-      <li><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /></a></li>
-      <li><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /></a></li>
-      <li><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /></a></li>
-      <li><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /></a></li>
-    </ul>
-  </div>
-  <!-- Start Home Page -->
-  <div id="wrapper" class="home"><a name="home"></a>
-    
-    <div class="content_cell_less_pad">
-      <h1>Dan Stoeltzing</h1>   
-      <h3>Web Designer &amp; Developer</h3>
-      
-      <br>
+	// The controller class file name.  Example:  Mycontroller
+	// $routing['controller'] = '';
 
-      <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
 
-      <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for GatorBites Tail &amp; Ale. His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
-      <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
-        <br><strong>- Another Person, Business Name</strong></p><br><br>
-    
-    </div>   
-    <div class="dan_container"> <img class="dan" src="assets/img/dan.png">  </div>
-  </div>
-  <!-- End Home Page -->
-  <!-- Start Developer Page -->
-  <div id="wrapper" class="developer shadow_top"><a name="developer"></a>
-    <div class="content_cell_less_pad">
-      <h1>Web Devloper</h1>
-      <p>I am a meticulous web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
-      <h3>These are some of the things I'm skilled in</h3>
-      <div id="skills">
-        <div class="skill_circle"><img src="assets/img/logos/html.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/css.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/php.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/mysql.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/jquery.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/ci.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/laravel.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/dw.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/ps.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/git.png" width="80px"></div>        
-      </div>
-      <h3>These are some of the things I'm learning</h3>
-      <div id="skills">
-        <div class="skill_circle"><img src="assets/img/logos/linux.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/node.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/mongo.png" width="80px"></div>    
-      </div><br><br>
-    </div>
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ *
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
 
-  </div>
-  <!-- End Developer Page -->
-  <!-- Start Designer Page -->
-  <div id="wrapper" class="designer shadow_top"><a name="designer"></a>
-    <div class="content_cell_less_pad">
-      <h1>Web Designer</h1>
-      <h3>These are some websites I've designed</h3>
-      <div class="portfolio_screenshot">
-        <a href="http://thebridgeplace.com" target="_blank"><img src="assets/img/screenshots/bc.jpg"></a><br>
-        <p><a href="http://thebridgeplace.com" target="_blank">McGregor Point Bridge Club</a></p>
-      </div>
-      <div class="portfolio_screenshot">
-        <a href="http://yourphotodoc.com" target="_blank"><img src="assets/img/screenshots/photodoc.jpg"></a><br>
-        <p><a href="http://yourphotodoc.com" target="_blank">Your Photo Doctor</a></p>
-      </div>
-      <div class="portfolio_screenshot">
-        <a href="http://austinmillermusic.com" target="_blank"><img src="assets/img/screenshots/austin.jpg"></a><br>
-        <p><a href="http://austinmillermusic.com" target="_blank">Austin Miller Music</a></p>
-      </div><br>
-      <div class="portfolio_screenshot">
-        <a href="http://bewareofthegator.com" target="_blank"><img src="assets/img/screenshots/gator.jpg"></a><br>
-        <p><a href="http://bewareofthegator.com" target="_blank">GatorBites Tail &amp; Ale</a></p>
-      </div>
-      
-      <div class="portfolio_screenshot">
-        <img src="assets/img/screenshots/ti.jpg"><br>
-        <p>Turtle Ink Productions</p>
-      </div>
-      <div class="portfolio_screenshot">
-        <img src="assets/img/screenshots/cmm.jpg"><br>
-        <p>Crickets Make Math</p>
-      </div>
-      
-      <h3>And of course, this portfolio site...</h3><br><br>
-    </div>
-  </div>
-  <!-- End Designer Page -->
-  <!-- Start Contact Page -->
-  <div id="wrapper" class="contact shadow_top"><a name="contact"></a>
-    <div class="content_cell_less_pad">
-      <h1>Contact Me</h1>
-      <p>Questions? Comments?<br>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
-      <div id="contact_form_container">
-        <form name="contact_form">
-          <p><strong>Name</strong></p>
-          <input type="text" name="name">
-          <p><strong>Email Address</strong></p>
-          <p class="meta">I solemnly swear not to share, sell or spam it!</p>
-          <input type="text" name="name">
-          <p><strong>Message</strong></p>
-          <textarea name="message"></textarea>
-          <p></p>
-          <input type="submit" name="submit" value="Send"> 
-        </form>
-      </div><br><br>
-    
-    </div>
-  </div>
-  <!-- End Contact Page -->
-    
-</body>
-</html>
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (realpath($system_path) !== FALSE)
+	{
+		$system_path = realpath($system_path).'/';
+	}
+
+	// ensure there's a trailing slash
+	$system_path = rtrim($system_path, '/').'/';
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// The PHP file extension
+	// this global constant is deprecated.
+	define('EXT', '.php');
+
+	// Path to the system folder
+	define('BASEPATH', str_replace("\\", "/", $system_path));
+
+	// Path to the front controller (this file)
+	define('FCPATH', str_replace(SELF, '', __FILE__));
+
+	// Name of the "system folder"
+	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+
+	// The path to the "application" folder
+	if (is_dir($application_folder))
+	{
+		define('APPPATH', $application_folder.'/');
+	}
+	else
+	{
+		if ( ! is_dir(BASEPATH.$application_folder.'/'))
+		{
+			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
+		}
+
+		define('APPPATH', BASEPATH.$application_folder.'/');
+	}
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ *
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
+
+/* End of file index.php */
+/* Location: ./index.php */
