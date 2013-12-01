@@ -123,7 +123,7 @@
         </form>
       </div>
 
-      <p><strong>Email me directly: <a href="mailto:dstoeltzing@yahoo.com">dstoeltzing@yahoo.com</a></strong> | <strong>Connent with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong></p>
+      <p><strong>Email me directly: <?php echo mailto('dstoeltzing@yahoo.com','dstoeltzing@yahoo.com'); ?></strong> | <strong>Connent with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong></p>
       <br><br>
     
     </div>

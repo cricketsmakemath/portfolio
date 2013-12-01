@@ -167,6 +167,18 @@
   {
     width: 80%;
   }
+  input
+  {
+    width: 90%;
+  }
+  textarea
+  {
+    width: 90%;
+  }
+  input[type=submit]
+  {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -181,5 +193,9 @@
   .dan_container
   {
     display: none;
+  }
+  .developer h1
+  {
+    margin-top: 60px;
   }
 }

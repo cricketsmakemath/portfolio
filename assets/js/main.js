@@ -9,7 +9,7 @@ function positionDanOnLoad()
   dan.offset({top: topOffset, left: leftOffset});
   //lower opacity if overlap occurs
   contentBottomOffset = $(window).height() - ($('#home_content_cell').offset().top + $('#home_content_cell').height());
-  if(contentBottomOffset < (dan.height() - 40)){dan.css('opacity', '.6');}
+  if(contentBottomOffset < (dan.height() - 60)){dan.css('opacity', '.6');}
   else{if(dan.css('opacity') != '1'){dan.css('opacity', '1');}}
 };
   
