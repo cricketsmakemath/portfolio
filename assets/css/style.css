@@ -54,7 +54,7 @@ input:focus, textarea:focus
 	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.40);
 	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.40);
 }
-input[type=submit]
+input[type=button]
 {
 	width: 20%;
 	background-color: #001933;
@@ -258,7 +258,8 @@ input[type=submit]:hover
 }
 .contact h1
 {
-	color: #001933;
+	text-shadow: 6px 5px 5px rgba(150, 150, 150, 1);
+	color: #003366;	
 }
 .contact a
 {

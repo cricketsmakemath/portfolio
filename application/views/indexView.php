@@ -108,18 +108,18 @@
   <div id="wrapper" class="contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
-      <p>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
       <div id="contact_form_container">
-        <form name="contact_form">
+      <p>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
+          <form name="contact_form">
           <p><strong>Name</strong></p>
-          <input type="text" name="name">
+          <input type="text" name="name" id="name_field">
           <p><strong>Email Address</strong></p>
           <p class="meta">I solemnly swear not to share, sell or spam it!</p>
-          <input type="text" name="name">
+          <input type="text" name="email" id="email_field">
           <p><strong>Message</strong></p>
-          <textarea name="message"></textarea>
+          <textarea name="message" id="message_field"></textarea>
           <p></p>
-          <input type="submit" name="submit" value="Send"> 
+          <input type="button" name="submit" class="submit_form" value="Send"> 
         </form>
       </div>
 

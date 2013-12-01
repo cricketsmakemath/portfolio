@@ -76,4 +76,23 @@ $( document ).ready(function() {
     }
   }); 
 
+  // Form submit events
+  $(".submit_form").click(function() {  
+    var dataString = 'name='+ $("#name_field").val() + '&email=' + $("#email_field").val() + '&message=' + $("#message_field").val();  
+    //alert (dataString);return false;  
+    $.ajax({  
+      type: "POST",  
+      url: "index.php/welcome/submitform",  
+      data: dataString,  
+      success: function() {  
+        $('#contact_form_container').fadeOut('500', function() {
+          var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
+          $('#contact_form_container').html(newHtml);
+        });
+        $('#contact_form_container').fadeIn('500');          
+      }  
+    });  
+    return false;  
+  });  
+
 });
