@@ -75,6 +75,7 @@
     <div class="content_cell_less_pad">
       <h1>Web Designer</h1>
       <h3>These are some websites I've designed</h3>
+      <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><br>
       <div class="portfolio_screenshot">
         <a href="http://thebridgeplace.com" target="_blank"><img src="assets/img/screenshots/bc.jpg"></a><br>
         <p><a href="http://thebridgeplace.com" target="_blank">McGregor Point Bridge Club</a></p>
@@ -99,9 +100,7 @@
       <div class="portfolio_screenshot">
         <img src="assets/img/screenshots/cmm.jpg"><br>
         <p>Crickets Make Math</p>
-      </div>
-      
-      <h3>And of course, this portfolio site...</h3><br><br>
+      </div><br><br>
     </div>
   </div>
   <!-- End Designer Page -->
@@ -109,7 +108,7 @@
   <div id="wrapper" class="contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
-      <p>Questions? Comments?<br>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
+      <p>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
       <div id="contact_form_container">
         <form name="contact_form">
           <p><strong>Name</strong></p>
@@ -122,7 +121,10 @@
           <p></p>
           <input type="submit" name="submit" value="Send"> 
         </form>
-      </div><br><br>
+      </div>
+
+      <p><strong>Email me directly: <a href="mailto:dstoeltzing@yahoo.com">dstoeltzing@yahoo.com</a></strong> | <strong>Connent with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong></p>
+      <br><br>
     
     </div>
   </div>
