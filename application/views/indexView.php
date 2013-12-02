@@ -98,12 +98,11 @@
       <div class="portfolio_screenshot">
         <a href="http://austinmillermusic.com" target="_blank"><img src="assets/img/screenshots/austin.jpg"></a><br>
         <p><a href="http://austinmillermusic.com" target="_blank">Austin Miller Music</a></p>
-      </div><br>
+      </div>
       <div class="portfolio_screenshot">
         <a href="http://bewareofthegator.com" target="_blank"><img src="assets/img/screenshots/gator.jpg"></a><br>
         <p><a href="http://bewareofthegator.com" target="_blank">GatorBites Tail &amp; Ale</a></p>
-      </div>
-      
+      </div>      
       <div class="portfolio_screenshot">
         <img src="assets/img/screenshots/ti.jpg"><br>
         <p>Turtle Ink Productions</p>

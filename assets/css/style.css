@@ -383,11 +383,14 @@ input[type=button]:hover
 	font-size: 1.3em;
 	font-family: "mostra-nuova";
 }
+#project_list li
+{
+	margin-bottom: 6px;
+}
 #project_list ul li a
 {
 	color: #003366;
 	font-size: 1.1em;
 	text-shadow: none;
-
 }
 
