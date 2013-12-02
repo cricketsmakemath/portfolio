@@ -40,7 +40,7 @@
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
       <p>"[Dan] did a great job at making my vision a reality. He also went above and beyond by adding a few of his own ideas to compliment mine, which were both tasteful and practical."
-        <br><strong>- Austim Miller, Musician</strong></p><br><br>
+        <br><strong>- Austin Miller, Musician</strong></p><br><br>
     
     </div>   
     <div class="dan_container"> <img class="dan" src="assets/img/dan.png" id="dan">  </div>

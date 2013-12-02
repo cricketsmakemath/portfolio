@@ -87,6 +87,7 @@ $( document ).ready(function() {
 
   // Form submit events
   $(".submit_form").click(function() { 
+    $(".submit_form").prop('value', 'Please Wait . . .');
     var dataString = 'name='+ $("#name_field").val() + '&email=' + $("#email_field").val() + '&message=' + $("#message_field").val();  
     //alert (dataString);return false;  
     $.ajax({  
@@ -106,6 +107,7 @@ $( document ).ready(function() {
         else
         {
           // submission failed, display errors
+          $(".submit_form").prop('value', 'Send');
           var res = data.split("|"); 
           if (jQuery.inArray( "name", res ) != '-1') { $('#error_name').slideDown('slow'); };
           if (jQuery.inArray( "email", res ) != '-1') { $('#error_email').slideDown('slow'); };

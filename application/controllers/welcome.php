@@ -57,7 +57,7 @@ class Welcome extends CI_Controller {
 			$this->email->subject('Email from portfolio contact form');
 			$message_content = 'Name: ' . $name . ' | Email: ' . $email . ' | Message: ' . $message_to_dan;
 			$this->email->message($message_content);
-			//$this->email->send();
+			$this->email->send();
 		}
 		// TODO: move this to email success
 		echo 'SUCCESS';	
