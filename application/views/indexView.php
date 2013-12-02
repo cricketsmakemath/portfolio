@@ -39,8 +39,8 @@
       <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for GatorBites Tail &amp; Ale. His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus ac augue feugiat rhoncus vel in nisl. Integer at elit porttitor, varius velit a, bibendum libero."
-        <br><strong>- Another Person, Business Name</strong></p><br><br>
+      <p>"[Dan] did a great job at making my vision a reality. He also went above and beyond by adding a few of his own ideas to compliment mine, which were both tasteful and practical."
+        <br><strong>- Austim Miller, Musician</strong></p><br><br>
     
     </div>   
     <div class="dan_container"> <img class="dan" src="assets/img/dan.png" id="dan">  </div>
