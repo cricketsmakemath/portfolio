@@ -52,10 +52,8 @@ $( document ).ready(function() {
   // Schow project list
   $("#show_project_list").click(function() {
     $("#show_project_list").fadeOut('fast', function() {
-      $('#project_list').slideDown('fast', function() {
-        $('#project_list p').fadeIn('fast');
-        $('#project_list h2').fadeIn('fast');
-        $(window).scrollTop($('#project_list').offset().top - 150);
+      $('#project_list').slideDown('fast', function() {  
+        $(window).scrollTop($('#project_list').offset().top - 140);
       });
     });    
   });
@@ -88,7 +86,7 @@ $( document ).ready(function() {
   }); 
 
   // Form submit events
-  $(".submit_form").click(function() {  
+  $(".submit_form").click(function() { 
     var dataString = 'name='+ $("#name_field").val() + '&email=' + $("#email_field").val() + '&message=' + $("#message_field").val();  
     //alert (dataString);return false;  
     $.ajax({  

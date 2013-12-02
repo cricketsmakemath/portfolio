@@ -60,7 +60,7 @@ input[type=button]
 	background-color: #001933;
 	color: #e5e9f2;
 }
-input[type=submit]:hover
+input[type=button]:hover
 {
 	background-image: url('../img/tweed.png');
     background-repeat: repeat;
@@ -359,14 +359,25 @@ input[type=submit]:hover
 #project_list
 {
 	display: none;
+	background-color: #e5e9f2;
+	border: 3px solid #003366; 
+	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.75);
+	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.75);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #project_list h2
 {
 	color: #003366;
 	font-size: 2.6em;
-	display: none;
+
 }
 #project_list p
 {
-	display: none;
+
 }
