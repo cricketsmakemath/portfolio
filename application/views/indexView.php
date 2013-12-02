@@ -51,7 +51,7 @@
     <div class="content_cell_less_pad">
       <h1>Web Devloper</h1>
       <p>I am a meticulous web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
-      <p><strong>These are some of the tools I use to make awesome web applications.</strong></p>
+      <p><strong>These are some of the tools I use to make web applications.</strong></p>
       <div id="skills">
         <div class="skill_circle"><img src="assets/img/logos/html.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/css.png" width="80px"></div>
@@ -68,12 +68,13 @@
       <p><a id="show_project_list"><strong>Click Here to read about some projects I've taken part in.</strong></a></p>
       <div id="project_list">
         <h2>Recent projects</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ul>
+        <li>Lead a complete overhaul and redesign of the <a href="http://www.edison.edu" target="_blank">Edison State College</a> website.</li>
+        <li>Co-built an automated scholarship management application for Edison State College that includes a dynamic student application as well as a back-end administration and awarding feature.</li>
+        <li>Built a paperless Board of Trustees agenda application for Edison State College that saved the institution thousands in courier fees.</li>
+        <li>Set up web payments on <a href="http://2over1.com" target="_blank">2over1.com</a> via paypal and authorize.net and automated database registration with VuBridge upon successful payment.</li>
+        <li>Built simplistic, custom content management features for the <a href="http://thebridgeplace.com" target="_blank">McGregor Point Bridge Club</a> website.</li>
+        </ul>
       </div>
       <br><br>
     </div>
