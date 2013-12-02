@@ -55,6 +55,7 @@ $( document ).ready(function() {
       $('#project_list').slideDown('fast', function() {
         $('#project_list p').fadeIn('fast');
         $('#project_list h2').fadeIn('fast');
+        $(window).scrollTop($('#project_list').offset().top - 150);
       });
     });    
   });
