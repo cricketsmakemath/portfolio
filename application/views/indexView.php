@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dan Stoeltzing: Web Developer, Web Designer, Producer</title>
+    <title>Dan Stoeltzing: Web Designer and Developer</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <META NAME="keywords" CONTENT="web,deisgn,development,fort myers,florida,small business,portfolio">
+    <META NAME="description" CONTENT="I am a meticulous web devloper with 5 years of professional and freelance experience. Currenty, I am employed as the Webmaster at Edison State College.">
+    <META NAME="author" CONTENT="Daniel Stoeltzing">
+    <META NAME="robots" CONTENT="FOLLOW,INDEX">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <?php $this->carabiner->display('both'); ?>
 </head>
