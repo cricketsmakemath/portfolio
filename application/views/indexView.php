@@ -111,12 +111,12 @@
       <div id="contact_form_container">
       <p>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
           <form name="contact_form">
-          <p><strong>Name</strong></p>
+          <p><strong>Name</strong> <span class="error" id="error_name" style="display:none"><br>Please enter your name</span></p>
           <input type="text" name="name" id="name_field">
-          <p><strong>Email Address</strong></p>
+          <p><strong>Email Address</strong> <span class="error" id="error_email" style="display:none"><br>Please a valid email address</span></p>
           <p class="meta">I solemnly swear not to share, sell or spam it!</p>
           <input type="text" name="email" id="email_field">
-          <p><strong>Message</strong></p>
+          <p><strong>Message</strong> <span class="error" id="error_message" style="display:none"><br>Please enter a message</span></p>
           <textarea name="message" id="message_field"></textarea>
           <p></p>
           <input type="button" name="submit" class="submit_form" value="Send"> 

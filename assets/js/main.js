@@ -84,12 +84,38 @@ $( document ).ready(function() {
       type: "POST",  
       url: "index.php/welcome/submitform",  
       data: dataString,  
-      success: function() {  
-        $('#contact_form_container').fadeOut('500', function() {
-          var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
-          $('#contact_form_container').html(newHtml);
-        });
-        $('#contact_form_container').fadeIn('500');          
+      success: function(data) {
+        if(data == 'SUCCESS')
+        {  
+          // successful submission, display thank you message
+          $('#contact_form_container').fadeOut('500', function() {
+            var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
+            $('#contact_form_container').html(newHtml);
+            console.log(data);
+          });
+          $('#contact_form_container').fadeIn('500'); 
+        }
+        else
+        {
+          // submission failed, display errors
+          var res = data.split("|"); 
+          console.log(res.toString());
+          // name error
+          if (jQuery.inArray( "name", res ) != '-1') 
+          {
+           $('#error_name').slideDown('slow');
+          };
+          // email error
+          if (jQuery.inArray( "email", res ) != '-1') 
+          {
+            $('#error_email').slideDown('slow');
+          };
+          // message error
+          if (jQuery.inArray( "message", res ) != '-1') 
+          {
+            $('#error_message').slideDown('slow');
+          };
+        }         
       }  
     });  
     return false;  
