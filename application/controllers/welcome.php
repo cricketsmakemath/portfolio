@@ -2,22 +2,40 @@
 
 class Welcome extends CI_Controller {
 
+	// main page
 	public function index()
 	{
-		//load resources
+		// load resources and set vars
+		$data = array();
+		$data['browser_message'] = false;
 		$this->load->helper('url');
 		$this->load->library('carabiner');
+		$this->load->library('user_agent');
 
 		// load assets
-		$this->carabiner->css('style.css');
-		$this->carabiner->css('media.css');
+		$browser = $this->agent->browser();
+		$browser_version = $this->agent->version();
+		if($browser == 'Internet Explorer' && ($browser_version == 6 || $browser_version == 7 || $browser_version == 8))
+		{
+			$this->carabiner->css('ie.css');
+			if($browser_version == 6 || $browser_version == 7)
+			{
+				$data['browser_message'] = '<p class="error" style="border: 1px dotted red; padding: 10px;">It appears you are using an older broswer. Because this site uses some of the latest and greatest technologies, some things might not look right to you. I recommend viewing this site in a newer browser such as the latest version of <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">Internet Explorer</a>, <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a> for the best experience.</p>';
+			}
+		}
+		else
+		{
+			$this->carabiner->css('style.css');
+			$this->carabiner->css('media.css');
+		}
 		$this->carabiner->js('jquery.min.js');
 		$this->carabiner->js('main.js');
 
 		//display page
-		$this->load->view('indexView');
+		$this->load->view('indexView', $data);
 	}
 
+	// form submission ajax function
 	public function submitform()
 	{
 		// validate input
