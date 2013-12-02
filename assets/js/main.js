@@ -49,6 +49,16 @@ $( document ).ready(function() {
     });
   });
 
+  // Schow project list
+  $("#show_project_list").click(function() {
+    $("#show_project_list").fadeOut('fast', function() {
+      $('#project_list').slideDown('fast', function() {
+        $('#project_list p').fadeIn('fast');
+        $('#project_list h2').fadeIn('fast');
+      });
+    });    
+  });
+
   // Menu hover effect
   $('.menu_link').hover(function() 
     {
@@ -91,7 +101,6 @@ $( document ).ready(function() {
           $('#contact_form_container').fadeOut('500', function() {
             var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
             $('#contact_form_container').html(newHtml);
-            console.log(data);
           });
           $('#contact_form_container').fadeIn('500'); 
         }
@@ -99,22 +108,9 @@ $( document ).ready(function() {
         {
           // submission failed, display errors
           var res = data.split("|"); 
-          console.log(res.toString());
-          // name error
-          if (jQuery.inArray( "name", res ) != '-1') 
-          {
-           $('#error_name').slideDown('slow');
-          };
-          // email error
-          if (jQuery.inArray( "email", res ) != '-1') 
-          {
-            $('#error_email').slideDown('slow');
-          };
-          // message error
-          if (jQuery.inArray( "message", res ) != '-1') 
-          {
-            $('#error_message').slideDown('slow');
-          };
+          if (jQuery.inArray( "name", res ) != '-1') { $('#error_name').slideDown('slow'); };
+          if (jQuery.inArray( "email", res ) != '-1') { $('#error_email').slideDown('slow'); };
+          if (jQuery.inArray( "message", res ) != '-1') { $('#error_message').slideDown('slow'); };
         }         
       }  
     });  

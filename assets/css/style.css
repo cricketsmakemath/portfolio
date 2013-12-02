@@ -350,5 +350,23 @@ input[type=submit]:hover
 .error
 {
 	color: red;
+	font-weight: bold;
 }
-
+#show_project_list:hover
+{
+	cursor: pointer;
+}
+#project_list
+{
+	display: none;
+}
+#project_list h2
+{
+	color: #003366;
+	font-size: 2.6em;
+	display: none;
+}
+#project_list p
+{
+	display: none;
+}

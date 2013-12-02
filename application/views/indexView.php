@@ -64,7 +64,16 @@
         <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80px"></div>
         <div class="skill_circle"><img src="assets/img/logos/git.png" width="80px"></div>        
       </div>
-      <p><a href=""><strong>Click Here to read about some projects I've taken part in.</strong></a></p>
+      <p><a id="show_project_list"><strong>Click Here to read about some projects I've taken part in.</strong></a></p>
+      <div id="project_list">
+        <h2>Recent projects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
       <br><br>
     </div>
 
@@ -113,7 +122,7 @@
           <form name="contact_form">
           <p><strong>Name</strong> <span class="error" id="error_name" style="display:none"><br>Please enter your name</span></p>
           <input type="text" name="name" id="name_field">
-          <p><strong>Email Address</strong> <span class="error" id="error_email" style="display:none"><br>Please a valid email address</span></p>
+          <p><strong>Email Address</strong> <span class="error" id="error_email" style="display:none"><br>Please enter a valid email address</span></p>
           <p class="meta">I solemnly swear not to share, sell or spam it!</p>
           <input type="text" name="email" id="email_field">
           <p><strong>Message</strong> <span class="error" id="error_message" style="display:none"><br>Please enter a message</span></p>
