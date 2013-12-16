@@ -68,7 +68,7 @@ input[type=button]:hover
 }
 
 /* Page global styles */
-#wrapper 
+.wrapper 
 {
 	min-height: 100%; 
 	position: relative;
@@ -119,6 +119,10 @@ input[type=button]:hover
 {
 	display: none;
 }
+#mobile_menu img
+{
+	border: 0px;
+}
 #menu ul
 {
 	padding: 0px;
@@ -142,6 +146,7 @@ input[type=button]:hover
 {
 	text-align: center;
 	position: absolute;
+	border: 0px;
 }
 #menu a
 {

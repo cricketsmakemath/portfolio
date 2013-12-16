@@ -14,22 +14,22 @@
 <body>
   <div id="menu" class="shadow_bottom">
     <ul>
-      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /><br>Dan</a></div></li>
-      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /><br>Developer</a></div></li>
-      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /><br>Designer</a></div></li>
-      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /><br>Contact</a></div></li>
+      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" class="menu_icon" alt="home" /><br>Dan</a></div></li>
+      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" class="menu_icon" alt="developer" /><br>Developer</a></div></li>
+      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" class="menu_icon" alt="designer" /><br>Designer</a></div></li>
+      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" class="menu_icon" alt="contact" /><br>Contact</a></div></li>
     </ul>
   </div>
   <div id="mobile_menu" class="shadow_bottom">
     <ul>
-      <li><a href="#home"><img src="assets/img/home-3.png" border="0" class="menu_icon" /></a></li>
-      <li><a href="#developer"><img src="assets/img/terminal-2.png" border="0" class="menu_icon" /></a></li>
-      <li><a href="#designer"><img src="assets/img/code.png" border="0" class="menu_icon" /></a></li>
-      <li><a href="#contact"><img src="assets/img/contact.png" border="0" class="menu_icon" /></a></li>
+      <li><a href="#home"><img src="assets/img/home-3.png" class="menu_icon" alt="home" /></a></li>
+      <li><a href="#developer"><img src="assets/img/terminal-2.png" class="menu_icon" alt="developer" /></a></li>
+      <li><a href="#designer"><img src="assets/img/code.png" class="menu_icon" alt="designer" /></a></li>
+      <li><a href="#contact"><img src="assets/img/contact.png" class="menu_icon" alt="contact" /></a></li>
     </ul>
   </div>
   <!-- Start Home Page -->
-  <div id="wrapper" class="home"><a name="home"></a>
+  <div class="wrapper home"><a name="home"></a>
     
     <div class="content_cell_less_pad" id="home_content_cell">
       <h1>Dan Stoeltzing</h1>   
@@ -47,27 +47,27 @@
         <br><strong>- Austin Miller, Musician</strong></p><br><br>
     
     </div>   
-    <div class="dan_container"> <img class="dan" src="assets/img/dan.png" id="dan">  </div>
+    <div class="dan_container"> <img class="dan" src="assets/img/dan.png" id="dan" alt="dan" />  </div>
   </div>
   <!-- End Home Page -->
   <!-- Start Developer Page -->
-  <div id="wrapper" class="developer shadow_top"><a name="developer"></a>
+  <div class="wrapper developer shadow_top"><a name="developer"></a>
     <div class="content_cell_less_pad">
       <h1>Web Devloper</h1>
       <p>I am a meticulous web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
       <p><strong>These are some of the tools I use to make web applications.</strong></p>
       <div id="skills">
-        <div class="skill_circle"><img src="assets/img/logos/html.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/css.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/php.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/mysql.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/jquery.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/ci.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/laravel.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/dw.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/ps.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80px"></div>
-        <div class="skill_circle"><img src="assets/img/logos/git.png" width="80px"></div>        
+        <div class="skill_circle"><img src="assets/img/logos/html.png" width="80" alt="HTML"></div>
+        <div class="skill_circle"><img src="assets/img/logos/css.png" width="80" alt="CSS"></div>
+        <div class="skill_circle"><img src="assets/img/logos/php.png" width="80" alt="php"></div>
+        <div class="skill_circle"><img src="assets/img/logos/mysql.png" width="80" alt="mysql"></div>
+        <div class="skill_circle"><img src="assets/img/logos/jquery.png" width="80" alt="jquery"></div>
+        <div class="skill_circle"><img src="assets/img/logos/ci.png" width="80" alt="codeigniter"></div>
+        <div class="skill_circle"><img src="assets/img/logos/laravel.png" width="80" alt="laravel"></div>
+        <div class="skill_circle"><img src="assets/img/logos/dw.png" width="80" alt="dreamweaver"></div>
+        <div class="skill_circle"><img src="assets/img/logos/ps.png" width="80" alt="photoshop"></div>
+        <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80" alt="sublime"></div>
+        <div class="skill_circle"><img src="assets/img/logos/git.png" width="80" alt="git"></div>        
       </div>
       <p><a id="show_project_list"><strong>Click Here to read about some projects I've taken part in.</strong></a></p>
       <div id="project_list">
@@ -86,40 +86,40 @@
   </div>
   <!-- End Developer Page -->
   <!-- Start Designer Page -->
-  <div id="wrapper" class="designer shadow_top"><a name="designer"></a>
+  <div class="wrapper designer shadow_top"><a name="designer"></a>
     <div class="content_cell_less_pad">
       <h1>Web Designer</h1>
       <h3>These are some websites I've designed</h3>
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><br>
       <div class="portfolio_screenshot">
-        <a href="http://thebridgeplace.com" target="_blank"><img src="assets/img/screenshots/bc.jpg"></a><br>
+        <a href="http://thebridgeplace.com" target="_blank"><img src="assets/img/screenshots/bc.jpg" alt="McGregor Point Bridge Club"></a><br>
         <p><a href="http://thebridgeplace.com" target="_blank">McGregor Point Bridge Club</a></p>
       </div>
       <div class="portfolio_screenshot">
-        <a href="http://yourphotodoc.com" target="_blank"><img src="assets/img/screenshots/photodoc.jpg"></a><br>
+        <a href="http://yourphotodoc.com" target="_blank"><img src="assets/img/screenshots/photodoc.jpg" alt="Your Photo Doc"></a><br>
         <p><a href="http://yourphotodoc.com" target="_blank">Your Photo Doctor</a></p>
       </div>
       <div class="portfolio_screenshot">
-        <a href="http://austinmillermusic.com" target="_blank"><img src="assets/img/screenshots/austin.jpg"></a><br>
+        <a href="http://austinmillermusic.com" target="_blank"><img src="assets/img/screenshots/austin.jpg" alt="Austin Miller Music"></a><br>
         <p><a href="http://austinmillermusic.com" target="_blank">Austin Miller Music</a></p>
       </div>
       <div class="portfolio_screenshot">
-        <a href="http://bewareofthegator.com" target="_blank"><img src="assets/img/screenshots/gator.jpg"></a><br>
+        <a href="http://bewareofthegator.com" target="_blank"><img src="assets/img/screenshots/gator.jpg" alt="GatorBites Tail and Ale"></a><br>
         <p><a href="http://bewareofthegator.com" target="_blank">GatorBites Tail &amp; Ale</a></p>
       </div>      
       <div class="portfolio_screenshot">
-        <img src="assets/img/screenshots/ti.jpg"><br>
+        <img src="assets/img/screenshots/ti.jpg" alt="Turtle Ink Productions"><br>
         <p>Turtle Ink Productions</p>
       </div>
       <div class="portfolio_screenshot">
-        <img src="assets/img/screenshots/cmm.jpg"><br>
+        <img src="assets/img/screenshots/cmm.jpg" alt="Crickets Make Math"><br>
         <p>Crickets Make Math</p>
       </div><br><br>
     </div>
   </div>
   <!-- End Designer Page -->
   <!-- Start Contact Page -->
-  <div id="wrapper" class="contact shadow_top"><a name="contact"></a>
+  <div class="wrapper contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
       <div id="contact_form_container">
