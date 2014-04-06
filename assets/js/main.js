@@ -86,37 +86,37 @@ $( document ).ready(function() {
   }); 
 
   // Form submit events
-  $(".submit_form").click(function() { 
-    $(".submit_form").prop('value', 'Please Wait . . .');
-    var dataString = 'name='+ $("#name_field").val() + '&email=' + $("#email_field").val() + '&message=' + $("#message_field").val();  
-    //alert (dataString);return false;  
-    $.ajax({  
-      type: "POST",  
-      url: "index.php/welcome/submitform",  
-      data: dataString,  
-      success: function(data) {
-        if(data == 'SUCCESS')
-        {  
-          // successful submission, display thank you message
-          $('#contact_form_container').fadeOut('500', function() {
-            var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
-            $('#contact_form_container').html(newHtml);
-          });
-          $('#contact_form_container').fadeIn('500'); 
-        }
-        else
-        {
-          // submission failed, display errors
-          $(".submit_form").prop('value', 'Send');
-          var res = data.split("|"); 
-          if (jQuery.inArray( "name", res ) != '-1') { $('#error_name').slideDown('slow'); };
-          if (jQuery.inArray( "email", res ) != '-1') { $('#error_email').slideDown('slow'); };
-          if (jQuery.inArray( "message", res ) != '-1') { $('#error_message').slideDown('slow'); };
-        }         
-      }  
-    });  
-    return false;  
-  });
+  // $(".submit_form").click(function() { 
+  //   $(".submit_form").prop('value', 'Please Wait . . .');
+  //   var dataString = 'name='+ $("#name_field").val() + '&email=' + $("#email_field").val() + '&message=' + $("#message_field").val();  
+  //   //alert (dataString);return false;  
+  //   $.ajax({  
+  //     type: "POST",  
+  //     url: "index.php/welcome/submitform",  
+  //     data: dataString,  
+  //     success: function(data) {
+  //       if(data == 'SUCCESS')
+  //       {  
+  //         // successful submission, display thank you message
+  //         $('#contact_form_container').fadeOut('500', function() {
+  //           var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
+  //           $('#contact_form_container').html(newHtml);
+  //         });
+  //         $('#contact_form_container').fadeIn('500'); 
+  //       }
+  //       else
+  //       {
+  //         // submission failed, display errors
+  //         $(".submit_form").prop('value', 'Send');
+  //         var res = data.split("|"); 
+  //         if (jQuery.inArray( "name", res ) != '-1') { $('#error_name').slideDown('slow'); };
+  //         if (jQuery.inArray( "email", res ) != '-1') { $('#error_email').slideDown('slow'); };
+  //         if (jQuery.inArray( "message", res ) != '-1') { $('#error_message').slideDown('slow'); };
+  //       }         
+  //     }  
+  //   });  
+  //   return false;  
+  // });
 
   // show dan  
   $(".dan").css("display","block");;

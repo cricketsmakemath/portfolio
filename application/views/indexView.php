@@ -122,23 +122,15 @@
   <div class="wrapper contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
-      <div id="contact_form_container">
-      <p>Fill out the form below to shoot me an email. I'll get back to you A.S.A.P</p>
-          <form name="contact_form">
-          <p><strong>Name</strong> <span class="error" id="error_name" style="display:none"><br>Please enter your name</span></p>
-          <input type="text" name="name" id="name_field">
-          <p><strong>Email Address</strong> <span class="error" id="error_email" style="display:none"><br>Please enter a valid email address</span></p>
-          <p class="meta">I solemnly swear not to share, sell or spam it!</p>
-          <input type="text" name="email" id="email_field">
-          <p><strong>Message</strong> <span class="error" id="error_message" style="display:none"><br>Please enter a message</span></p>
-          <textarea name="message" id="message_field"></textarea>
-          <p></p>
-          <input type="button" name="submit" class="submit_form" value="Send"> 
-        </form>
-      </div>
+      <img src="assets/img/email.svg" width="50px">
+      <strong> 
+        <script type="text/javascript">var lyiwejk = ['e','m','i','d','s',' ','t','i','t','s','f','=','l','c','>','o','/','l','e','o','@','c',' ','g','<','y','h','"','n','a','i','s','l','a','o','"','o','a','z','o','h','c','a','.','@','o','a','a',':','m','d','e','z','g','n','t','"','<','l','y','o','h','o','.','"','t','e','=','s','i','t','a','o','l','r','m','m','>'];var tbxdmpu = [20,47,61,16,54,2,18,11,13,17,6,7,40,71,52,35,75,21,5,32,64,34,38,26,0,65,30,45,25,10,49,42,12,76,56,37,69,1,23,14,3,39,48,33,27,19,66,29,15,73,53,46,60,63,62,59,51,74,58,28,72,67,31,70,8,55,57,44,43,24,22,41,68,50,4,9,36,77];var arxfuda= new Array();for(var i=0;i<tbxdmpu.length;i++){arxfuda[tbxdmpu[i]] = lyiwejk[i]; }for(var i=0;i<arxfuda.length;i++){document.write(arxfuda[i]);}
+        </script>
+      </strong>
+      <br>
+      <img src="assets/img/linkedin2.svg" width="50px"><strong><a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">Connect with me on LinkedIn</a></strong><br>
+      <img src="assets/img/github.svg" width="50px"><strong><a href="https://github.com/cricketsmakemath/portfolio" target="_blank">View this code on GitHub</a></strong>
 
-      <p><strong>Email me directly: <script type="text/javascript">var lyiwejk = ['e','m','i','d','s',' ','t','i','t','s','f','=','l','c','>','o','/','l','e','o','@','c',' ','g','<','y','h','"','n','a','i','s','l','a','o','"','o','a','z','o','h','c','a','.','@','o','a','a',':','m','d','e','z','g','n','t','"','<','l','y','o','h','o','.','"','t','e','=','s','i','t','a','o','l','r','m','m','>'];var tbxdmpu = [20,47,61,16,54,2,18,11,13,17,6,7,40,71,52,35,75,21,5,32,64,34,38,26,0,65,30,45,25,10,49,42,12,76,56,37,69,1,23,14,3,39,48,33,27,19,66,29,15,73,53,46,60,63,62,59,51,74,58,28,72,67,31,70,8,55,57,44,43,24,22,41,68,50,4,9,36,77];var arxfuda= new Array();for(var i=0;i<tbxdmpu.length;i++){arxfuda[tbxdmpu[i]] = lyiwejk[i]; }for(var i=0;i<arxfuda.length;i++){document.write(arxfuda[i]);}
-</script></strong> | <strong>Connect with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong></p>
       <br><br>
     
     </div>
