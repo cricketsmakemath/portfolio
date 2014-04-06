@@ -160,7 +160,7 @@ input[type=button]:hover
 	margin-right: 50%;
 	position: absolute;
 }
-#contact_form_container p
+/*#contact_form_container p
 {
 	margin: 20px 0px 0px 0px;
 }
@@ -169,7 +169,7 @@ input[type=button]:hover
 	font-size: 1em;
 	font-family: sans-serif;
 	margin: 0px;
-}
+}*/
 
 /* Home page */
 .home
