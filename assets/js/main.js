@@ -116,6 +116,9 @@ $( document ).ready(function() {
       }  
     });  
     return false;  
-  });  
+  });
+
+  // show dan  
+  $(".dan").css("display","block");;
 
 });

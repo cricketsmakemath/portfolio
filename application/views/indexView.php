@@ -9,7 +9,7 @@
     <META NAME="author" CONTENT="Daniel Stoeltzing">
     <META NAME="robots" CONTENT="FOLLOW,INDEX">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <?php $this->carabiner->display('both'); ?>
+    <?php $this->carabiner->display('css'); ?>
 </head>
 <body>
   <div id="menu" class="shadow_bottom">
@@ -144,6 +144,6 @@
     </div>
   </div>
   <!-- End Contact Page -->
-    
+<?php $this->carabiner->display('js'); ?>
 </body>
 </html>

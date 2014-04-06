@@ -346,6 +346,7 @@ input[type=button]:hover
 .dan
 {
 	z-index: 1;
+	display: none;
 }
 .dan_container
 {
