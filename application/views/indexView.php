@@ -53,7 +53,7 @@
   <!-- Start Developer Page -->
   <div class="wrapper developer shadow_top"><a name="developer"></a>
     <div class="content_cell_less_pad">
-      <h1>Web Devloper</h1>
+      <h1>Web Developer</h1>
       <p>I am a meticulous web developer with 5 years of professional and freelance experience.</p>
 
       <p>I <strong class="dev_highlight">listen</strong> carefully, <strong class="dev_highlight">ponder</strong> thoroughly, and then I use technology to <strong class="dev_highlight">solve problems</strong> and <strong class="dev_highlight">make your life easier</strong>.</p>
@@ -76,7 +76,7 @@
         <li>A paperless agenda management system for Edison State College's Board of Trustees meetings which saved the college thousands in courier/printing fees.</li>
         <li>Web payments on <a href="http://2over1.com" target="_blank">2over1.com</a> via paypal and authorize.net that integrate with the VuBridge registration process allowing for seamless payment and registration.</li>
         <li>A complete announcement management system for Edison State College through which articles can be submitted, reviewed, approved and compiled into a weekly, mass-mailed, newsletter.</li>
-        <li>Custom built, ultra-simplified content management features for <a href="http://www.bewareofthegator.com" target="_blank">bewareofthegator.com</a> and <a href="http://www.thebridgeplace.com">thebridgeplace.com</a></li>
+        <li>Custom built, ultra-simplified content management features for <a href="http://www.bewareofthegator.com" target="_blank">bewareofthegator.com</a> and <a href="http://www.thebridgeplace.com" target="_blank">thebridgeplace.com</a>.</li>
       </ul> 
       </div>    
       <br><br>
@@ -121,16 +121,20 @@
   <div class="wrapper contact shadow_top"><a name="contact"></a>
     <div class="content_cell_less_pad">
       <h1>Contact Me</h1>
-      <img src="assets/img/email.svg" width="50px">
-      <strong> 
+      
+      <p>Can I be of service to you? If so, here's how to contact me:</p><br>
+      <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><br><br><br>
+      <strong class="contact_method">(716) 708-5024</strong><br>
+      <strong class="contact_method"> 
+        <noscript><img src="assets/img/email.png"><br>(The above link is inactive because you have Javascript turned off)</noscript>
         <script type="text/javascript">var lyiwejk = ['e','m','i','d','s',' ','t','i','t','s','f','=','l','c','>','o','/','l','e','o','@','c',' ','g','<','y','h','"','n','a','i','s','l','a','o','"','o','a','z','o','h','c','a','.','@','o','a','a',':','m','d','e','z','g','n','t','"','<','l','y','o','h','o','.','"','t','e','=','s','i','t','a','o','l','r','m','m','>'];var tbxdmpu = [20,47,61,16,54,2,18,11,13,17,6,7,40,71,52,35,75,21,5,32,64,34,38,26,0,65,30,45,25,10,49,42,12,76,56,37,69,1,23,14,3,39,48,33,27,19,66,29,15,73,53,46,60,63,62,59,51,74,58,28,72,67,31,70,8,55,57,44,43,24,22,41,68,50,4,9,36,77];var arxfuda= new Array();for(var i=0;i<tbxdmpu.length;i++){arxfuda[tbxdmpu[i]] = lyiwejk[i]; }for(var i=0;i<arxfuda.length;i++){document.write(arxfuda[i]);}
         </script>
-      </strong>
+      </strong class="contact_method">
       <br>
-      <img src="assets/img/linkedin2.svg" width="50px"><strong><a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">Connect with me on LinkedIn</a></strong><br>
-      <img src="assets/img/github.svg" width="50px"><strong><a href="https://github.com/cricketsmakemath/portfolio" target="_blank">View this code on GitHub</a></strong>
-
+      <strong class="contact_method">Connect with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong><br>
+      <strong class="contact_method">View this code on <a href="https://github.com/cricketsmakemath/portfolio" target="_blank">GitHub</a></strong>
       <br><br>
+       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
     
     </div>
   </div>

@@ -239,6 +239,7 @@ input[type=button]:hover
 #project_list
 {
 	width: 100%;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0px;
@@ -246,20 +247,23 @@ input[type=button]:hover
 #project_list ul
 {
 	text-align: left;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-family: "jaf-bernino-sans", sans-serif;
 	margin-top: 0px;
 	padding-top: 0px;
+	list-style-type: circle;
 }
 #project_list li
 {
 	margin-bottom: 6px;
+	color: #002242;
 }
 #project_list ul li a
 {
 	color: #003366;
 	font-size: 1em;
 	text-shadow: none;
+	text-decoration: underline;
 }
 
 /* Designer page */
@@ -306,7 +310,16 @@ input[type=button]:hover
 }
 .contact a
 {
-	color: #001933;
+	color: #003366;
+
+}
+.contact_method
+{
+
+	font-size: 2em;
+	color: #003366;
+	display: block;
+	padding: 0px;
 }
 
 /* Componenets */
