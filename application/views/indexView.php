@@ -40,7 +40,7 @@
 
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
-      <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for GatorBites Tail &amp; Ale. His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale</strong></p>
+      <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for GatorBites Tail &amp; Ale. His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale Restaurant</strong></p>
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
       <p>"[Dan] did a great job at making my vision a reality. He also went above and beyond by adding a few of his own ideas to compliment mine, which were both tasteful and practical."
@@ -54,32 +54,31 @@
   <div class="wrapper developer shadow_top"><a name="developer"></a>
     <div class="content_cell_less_pad">
       <h1>Web Devloper</h1>
-      <p>I am a meticulous web devloper with 5 years of professional and freelance experience.<br>Currenty, I am employed as the Webmaster at Edison State College.</p>
-      <p><strong>These are some of the tools I use to make web applications.</strong></p>
+      <p>I am a meticulous web developer with 5 years of professional and freelance experience.</p>
+
+      <p>I <strong class="dev_highlight">listen</strong> carefully, <strong class="dev_highlight">ponder</strong> thoroughly, and then I use technology to <strong class="dev_highlight">solve problems</strong> and <strong class="dev_highlight">make your life easier</strong>.</p>
+
+      <h2>These are some of my favorite tools:</h2>
+   
       <div id="skills">
         <div class="skill_circle"><img src="assets/img/logos/html.png" width="80" alt="HTML"></div>
         <div class="skill_circle"><img src="assets/img/logos/css.png" width="80" alt="CSS"></div>
-        <div class="skill_circle"><img src="assets/img/logos/php.png" width="80" alt="php"></div>
-        <div class="skill_circle"><img src="assets/img/logos/mysql.png" width="80" alt="mysql"></div>
         <div class="skill_circle"><img src="assets/img/logos/jquery.png" width="80" alt="jquery"></div>
+        <div class="skill_circle"><img src="assets/img/logos/php.png" width="80" alt="php"></div>
         <div class="skill_circle"><img src="assets/img/logos/ci.png" width="80" alt="codeigniter"></div>
-        <div class="skill_circle"><img src="assets/img/logos/laravel.png" width="80" alt="laravel"></div>
-        <div class="skill_circle"><img src="assets/img/logos/dw.png" width="80" alt="dreamweaver"></div>
-        <div class="skill_circle"><img src="assets/img/logos/ps.png" width="80" alt="photoshop"></div>
-        <div class="skill_circle"><img src="assets/img/logos/sublime.png" width="80" alt="sublime"></div>
-        <div class="skill_circle"><img src="assets/img/logos/git.png" width="80" alt="git"></div>        
+        <div class="skill_circle"><img src="assets/img/logos/laravel.png" width="80" alt="laravel"></div> 
+        <div class="skill_circle"><img src="assets/img/logos/mysql.png" width="80" alt="mysql"></div>       
       </div>
-      <p><a id="show_project_list"><strong>Click Here to read about some projects I've taken part in.</strong></a></p>
+
+      <h2>Some solutions I've developed include:</h2>
       <div id="project_list">
-        <h2>Recent projects</h2>
-        <ul>
-        <li>Lead a complete overhaul and redesign of the <a href="http://www.edison.edu" target="_blank">Edison State College</a> website.</li>
-        <li>Co-built an automated scholarship management application for Edison State College that includes a dynamic student application as well as a back-end administration and awarding feature.</li>
-        <li>Built a paperless Board of Trustees agenda application for Edison State College that saved the institution thousands in courier fees.</li>
-        <li>Set up web payments on <a href="http://2over1.com" target="_blank">2over1.com</a> via paypal and authorize.net and automated database registration with VuBridge upon successful payment.</li>
-        <li>Built simplistic, custom content management features for the <a href="http://thebridgeplace.com" target="_blank">McGregor Point Bridge Club</a> website.</li>
-        </ul>
-      </div>
+      <ul>
+        <li>A paperless agenda management system for Edison State College's Board of Trustees meetings which saved the college thousands in courier/printing fees.</li>
+        <li>Web payments on <a href="http://2over1.com" target="_blank">2over1.com</a> via paypal and authorize.net that integrate with the VuBridge registration process allowing for seamless payment and registration.</li>
+        <li>A complete announcement management system for Edison State College through which articles can be submitted, reviewed, approved and compiled into a weekly, mass-mailed, newsletter.</li>
+        <li>Custom built, ultra-simplified content management features for <a href="http://www.bewareofthegator.com" target="_blank">bewareofthegator.com</a> and <a href="http://www.thebridgeplace.com">thebridgeplace.com</a></li>
+      </ul> 
+      </div>    
       <br><br>
     </div>
 

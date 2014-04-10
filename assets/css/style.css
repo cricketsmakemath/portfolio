@@ -8,11 +8,12 @@ html, body
     margin: 0;
     background-image: url('../img/tweed.png');
     background-repeat: repeat;
+    font-family: sans-serif;
 }
 p
 {
-	font-family: "mostra-nuova";
-	font-size: 1.6em;
+	font-family: "jaf-bernino-sans", sans-serif;
+	font-size: 1.4em;
 	z-index: 100;
 }
 h1
@@ -80,7 +81,7 @@ input[type=button]:hover
 
 .content_cell_less_pad
 {
- 	padding-top: 100px;
+ 	padding-top: 120px;
  	text-align: center;
  	width: 1200px;
  	margin-left: auto;
@@ -150,9 +151,9 @@ input[type=button]:hover
 }
 #menu a
 {
-	font-family: "mostra-nuova";
+	font-family: "jaf-bernino-sans", sans-serif;
 	color: #e5e9f2;
-	font-size: 2em;
+	font-size: 1.7em;
 	text-decoration: none;
 	display: block;
 	width: 200px;
@@ -210,8 +211,11 @@ input[type=button]:hover
 }
 .developer h2
 {
-	font-family: "mostra-nuova";
-	font-size: 1.8em;
+	font-family: "jaf-bernino-sans", sans-serif;
+	font-size: 1.7em;
+	color: #003366;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 .developer h3
 {
@@ -219,14 +223,43 @@ input[type=button]:hover
 }
 .developer a
 {
-	color: #e5e9f2;
+	color: #003366;
 	text-decoration: none;
-	text-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
-	font-size: 1.2em;
 }
 .developer a:hover
 {
 	text-decoration: underline;
+}
+.dev_highlight
+{
+	color: #e5e9f2;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+	white-space: nowrap;
+}
+#project_list
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+#project_list ul
+{
+	text-align: left;
+	font-size: 1.1em;
+	font-family: "jaf-bernino-sans", sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#project_list li
+{
+	margin-bottom: 6px;
+}
+#project_list ul li a
+{
+	color: #003366;
+	font-size: 1em;
+	text-shadow: none;
 }
 
 /* Designer page */
@@ -245,7 +278,7 @@ input[type=button]:hover
 {
 	font-size: 1.8em;
 	margin-top: 20px;
-	font-family: "mostra-nuova";
+	font-family: "jaf-bernino-sans", sans-serif;
 	font-weight: 100;
 }
 .designer p
@@ -253,6 +286,11 @@ input[type=button]:hover
 	padding:0px;
 	margin: 10px 0px 0px 0px;
 	font-weight: bold;
+	font-size: .4em;
+}
+.designer a
+{
+	font-size: .7em;
 }
 /* Contact page */
 .contact
@@ -358,45 +396,6 @@ input[type=button]:hover
 	color: red;
 	font-weight: bold;
 }
-#show_project_list:hover
-{
-	cursor: pointer;
-}
-#project_list
-{
-	display: none;
-	background-color: #e5e9f2;
-	border: 3px solid #003366; 
-	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.75);
-	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.75);
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 5px;
-}
-#project_list h2
-{
-	color: #003366;
-	font-size: 2.6em;
-}
-#project_list ul
-{
-	text-align: left;
-	font-size: 1.3em;
-	font-family: "mostra-nuova";
-}
-#project_list li
-{
-	margin-bottom: 6px;
-}
-#project_list ul li a
-{
-	color: #003366;
-	font-size: 1.1em;
-	text-shadow: none;
-}
+
+
 
