@@ -6,7 +6,7 @@
   }
   p
   {
-  	font-size: 1.5em;
+  	font-size: 1.2em;
   }
 
   /*Sections*/
@@ -42,6 +42,10 @@
   {
   	margin-top: 80px;
   }
+  .developer h2
+  {
+    font-size: 1.5em;
+  }
   .designer h1
   {
     margin-top: 60px;
@@ -54,6 +58,10 @@
   .contact h1
   {
     margin-top: 60px;
+  }
+  .contact_method
+  {
+   font-size: 1.8em;
   }
 
   /*Components*/
@@ -104,15 +112,19 @@
   }
   p
   {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }  
 }
 
 @media screen and (max-width: 760px) {
  p
  {
-  font-size: 1.6em;
+  font-size: 1em;
  }
+ .developer h2
+  {
+    font-size: 1.3em;
+  }
  #wrapper
  {
   overflow: visible;
@@ -160,21 +172,17 @@
  {   
   width: 50%;
  }
- input
- {
-  width: 90%;
- }
- textarea
- {
-  width: 90%;
- }
- input[type=button]
- {
-  width: 30%;
- }
+  .contact_method
+  {
+   font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 650px) {
+ #dan_container
+ {
+  display: none;
+ }
  h1
  {
   font-size: 2em;
@@ -199,10 +207,17 @@
  {
   width: 90%;
  }
+  .contact_method
+  {
+   font-size: 1.2em;
+  }
 }
 
-@media screen and (max-height: 400px) {
-.dan_container
+/*
+TO DO: Make menu move to left side when screen is in landcape mode
+
+@media screen and (max-height: 500px) {
+#dan_container
 {
   display: none;
 }
@@ -259,9 +274,24 @@
   margin-top: 0px;
   padding-top: 0px;
 }
+.developer h1
+{ 
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.designer h1
+{ 
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.contact h1
+{ 
+  margin-top: 0px;
+  padding-top: 0px;
+}
 .content_cell_less_pad
 {
   padding-top: 10px;
   margin-top: 0px;
 }
-}
+}*/

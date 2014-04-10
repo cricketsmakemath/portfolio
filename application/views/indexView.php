@@ -34,10 +34,8 @@
     <div class="content_cell_less_pad" id="home_content_cell">
       <h1>Dan Stoeltzing</h1>   
       <h3>Web Designer &amp; Developer</h3>
-      <?php if($browser_message){echo $browser_message;} ?>
-      
+      <?php if($browser_message){echo $browser_message;} ?>      
       <br>
-
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
 
       <p>"Mr. Daniel Stoeltzing was contracted to produce a web page with a commerce function for GatorBites Tail &amp; Ale. His attention to detail, quick turn around and clear explanation of back-page functions was impeccable and greatly appreciated."<br><strong>- Todd Mann, Gatorbites Tail &amp; Ale Restaurant</strong></p>
@@ -47,7 +45,7 @@
         <br><strong>- Austin Miller, Musician</strong></p><br><br>
     
     </div>   
-    <div class="dan_container"> <img class="dan" src="assets/img/dan.png" id="dan" alt="dan" />  </div>
+    <div id="dan_container"><img class="dan" src="assets/img/dan.png" id="dan" alt="dan" /></div>
   </div>
   <!-- End Home Page -->
   <!-- Start Developer Page -->
@@ -108,11 +106,11 @@
       </div>      
       <div class="portfolio_screenshot">
         <img src="assets/img/screenshots/ti.jpg" alt="Turtle Ink Productions"><br>
-        <p>Turtle Ink Productions</p>
+        <p><a class="inactive_link">Turtle Ink Productions (Offline)</a></p>
       </div>
       <div class="portfolio_screenshot">
         <img src="assets/img/screenshots/cmm.jpg" alt="Crickets Make Math"><br>
-        <p>Crickets Make Math</p>
+        <p><a class="inactive_link">Crickets Make Math (Offline)</a></p>
       </div><br><br>
     </div>
   </div>
@@ -134,7 +132,7 @@
       <strong class="contact_method">Connect with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong><br>
       <strong class="contact_method">View this code on <a href="https://github.com/cricketsmakemath/portfolio" target="_blank">GitHub</a></strong>
       <br><br>
-       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div>
+      
     
     </div>
   </div>

@@ -3,14 +3,19 @@ function positionDanOnLoad()
 {
   //position image
   var dan = $('img.dan');
-  var bottomOffset = $(window).height() - (dan.offset().top + dan.height());
+  var bottomOffset = $(window).height() - Math.abs(dan.offset().top + dan.height());
   var topOffset    = dan.offset().top + bottomOffset;
   var leftOffset   = ($(window).width() - dan.width()) * 0.5;
+  console.log('LOAD RESIZE: Dan height = '+dan.height()+', Dan top offset = '+dan.offset().top+', Window height = '+$(window).height()+', bottom = '+bottomOffset+', top = '+topOffset+', left = '+leftOffset);
   dan.offset({top: topOffset, left: leftOffset});
+
   //lower opacity if overlap occurs
   contentBottomOffset = $(window).height() - ($('#home_content_cell').offset().top + $('#home_content_cell').height());
   if(contentBottomOffset < (dan.height() - 60)){dan.css('opacity', '.6');}
   else{if(dan.css('opacity') != '1'){dan.css('opacity', '1');}}
+
+  //show Dan
+  dan.css('display', 'block');
 };
   
 //move dan on scroll      
@@ -35,8 +40,8 @@ $( document ).ready(function() {
   })();
 
   //IE HACK: trigger .load on dan
-  danSrc = $(".dan").attr("src");
-  myImge = $(".dan").attr("src", danSrc + "?" + new Date().getTime());
+  danSrc = $("img.dan").attr("src");
+  myImge = $("img.dan").attr("src", danSrc + "?" + new Date().getTime());
 
   //position Dan on load
   $('img.dan').load(function() {
@@ -47,15 +52,6 @@ $( document ).ready(function() {
     $(window).resize(function(event) {
        positionDanOnLoad();
     });
-  });
-
-  // Schow project list
-  $("#show_project_list").click(function() {
-    $("#show_project_list").fadeOut('fast', function() {
-      $('#project_list').slideDown('fast', function() {  
-        $(window).scrollTop($('#project_list').offset().top - 140);
-      });
-    });    
   });
 
   // Menu hover effect
@@ -83,42 +79,6 @@ $( document ).ready(function() {
         return false;
       }
     }
-  }); 
-
-  // Form submit events
-  // $(".submit_form").click(function() { 
-  //   $(".submit_form").prop('value', 'Please Wait . . .');
-  //   var dataString = 'name='+ $("#name_field").val() + '&email=' + $("#email_field").val() + '&message=' + $("#message_field").val();  
-  //   //alert (dataString);return false;  
-  //   $.ajax({  
-  //     type: "POST",  
-  //     url: "index.php/welcome/submitform",  
-  //     data: dataString,  
-  //     success: function(data) {
-  //       if(data == 'SUCCESS')
-  //       {  
-  //         // successful submission, display thank you message
-  //         $('#contact_form_container').fadeOut('500', function() {
-  //           var newHtml = "<h3 style='font-size:3em;'>Thank You!</h3><p>I will reply to your message soon.</p><br><br>";
-  //           $('#contact_form_container').html(newHtml);
-  //         });
-  //         $('#contact_form_container').fadeIn('500'); 
-  //       }
-  //       else
-  //       {
-  //         // submission failed, display errors
-  //         $(".submit_form").prop('value', 'Send');
-  //         var res = data.split("|"); 
-  //         if (jQuery.inArray( "name", res ) != '-1') { $('#error_name').slideDown('slow'); };
-  //         if (jQuery.inArray( "email", res ) != '-1') { $('#error_email').slideDown('slow'); };
-  //         if (jQuery.inArray( "message", res ) != '-1') { $('#error_message').slideDown('slow'); };
-  //       }         
-  //     }  
-  //   });  
-  //   return false;  
-  // });
-
-  // show dan  
-  $(".dan").css("display","block");;
+  });  
 
 });

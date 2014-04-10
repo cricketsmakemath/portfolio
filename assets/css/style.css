@@ -27,46 +27,6 @@ h3
 {
 	font-family: "teeshirt";
 }
-input, textarea
-{
-	border: 2px solid #001933; 
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	padding: 4px;
-	font-size: 1.2em;
-	font-family: sans-serif;
-	background-color: #e5e9f2;
-	color: #003366;	
-}
-input
-{
-	text-align: center;
-	width: 40%;
-}
-textarea
-{
-	text-align: left;
-	width: 60%;
-}
-input:focus, textarea:focus
-{
-	-webkit-box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.40);
-	-moz-box-shadow:    1px 2px 18px rgba(0, 0, 0, 0.40);
-	box-shadow:         1px 2px 18px rgba(0, 0, 0, 0.40);
-}
-input[type=button]
-{
-	width: 20%;
-	background-color: #001933;
-	color: #e5e9f2;
-}
-input[type=button]:hover
-{
-	background-image: url('../img/tweed.png');
-    background-repeat: repeat;
-    cursor: pointer;
-}
 
 /* Page global styles */
 .wrapper 
@@ -228,7 +188,7 @@ input[type=button]:hover
 }
 .developer a:hover
 {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .dev_highlight
 {
@@ -290,11 +250,15 @@ input[type=button]:hover
 	padding:0px;
 	margin: 10px 0px 0px 0px;
 	font-weight: bold;
-	font-size: .4em;
 }
 .designer a
 {
 	font-size: .7em;
+}
+a.inactive_link:hover
+{
+	cursor: default;
+	text-decoration: none;
 }
 /* Contact page */
 .contact
@@ -315,9 +279,7 @@ input[type=button]:hover
 }
 .contact_method
 {
-
 	font-size: 2em;
-	color: #003366;
 	display: block;
 	padding: 0px;
 }
@@ -397,6 +359,7 @@ input[type=button]:hover
 .dan
 {
 	z-index: 1;
+	position: absolute;
 	display: none;
 }
 .dan_container
