@@ -14,10 +14,10 @@
 <body>
   <div id="menu" class="shadow_bottom">
     <ul>
-      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" class="menu_icon" alt="home" /><br>Dan</a></div></li>
-      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" class="menu_icon" alt="developer" /><br>Developer</a></div></li>
-      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" class="menu_icon" alt="designer" /><br>Designer</a></div></li>
-      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" class="menu_icon" alt="contact" /><br>Contact</a></div></li>
+      <li><div class="menu_link"><a href="#home"><img src="assets/img/home-3.png" class="menu_icon" alt="home" border="0" /><br>Dan</a></div></li>
+      <li><div class="menu_link"><a href="#developer"><img src="assets/img/terminal-2.png" class="menu_icon" alt="developer" border="0" /><br>Developer</a></div></li>
+      <li><div class="menu_link"><a href="#designer"><img src="assets/img/code.png" class="menu_icon" alt="designer" border="0" /><br>Designer</a></div></li>
+      <li><div class="menu_link"><a href="#contact"><img src="assets/img/contact.png" class="menu_icon" alt="contact" border="0" /><br>Contact</a></div></li>
     </ul>
   </div>
   <div id="mobile_menu" class="shadow_bottom">
@@ -122,15 +122,18 @@
       
       <p>Can I be of service to you? If so, here's how to contact me:</p><br>
       <div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><div class="sep_circle">&nbsp;</div><br><br><br>
-      <strong class="contact_method">(716) 708-5024</strong><br>
+      <strong class="contact_method"><img src="assets/img/<?php echo $supported_icon_format; ?>/phone3.<?php echo $supported_icon_format; ?>" width="30px"> (716) 708-5024</strong><br>
       <strong class="contact_method"> 
-        <noscript><img src="assets/img/email.png"><br>(The above link is inactive because you have Javascript turned off)</noscript>
-        <script type="text/javascript">var lyiwejk = ['e','m','i','d','s',' ','t','i','t','s','f','=','l','c','>','o','/','l','e','o','@','c',' ','g','<','y','h','"','n','a','i','s','l','a','o','"','o','a','z','o','h','c','a','.','@','o','a','a',':','m','d','e','z','g','n','t','"','<','l','y','o','h','o','.','"','t','e','=','s','i','t','a','o','l','r','m','m','>'];var tbxdmpu = [20,47,61,16,54,2,18,11,13,17,6,7,40,71,52,35,75,21,5,32,64,34,38,26,0,65,30,45,25,10,49,42,12,76,56,37,69,1,23,14,3,39,48,33,27,19,66,29,15,73,53,46,60,63,62,59,51,74,58,28,72,67,31,70,8,55,57,44,43,24,22,41,68,50,4,9,36,77];var arxfuda= new Array();for(var i=0;i<tbxdmpu.length;i++){arxfuda[tbxdmpu[i]] = lyiwejk[i]; }for(var i=0;i<arxfuda.length;i++){document.write(arxfuda[i]);}
-        </script>
+        <img src="assets/img/<?php echo $supported_icon_format; ?>/envelop.<?php echo $supported_icon_format; ?>" width="30px">
+        <noscript><img src="assets/img/email.PNG"><br><span class="email_off">(FYI: The email link above is inactive because you have Javascript turned off)</span></noscript>
+        <script type="text/javascript">
+var epfkuvl = ['i','g','a','.','t','d','h','<','c','g','o','m','d','d','a',' ','m','m','e','=','z','a','z','d','i','=',' ','l','e','n','w','/','<','>','"','e','c','f','"','n','"','>','s','l','@','i','"','a','s','n','m','@','.','r','l','o','n','b','e','w','i','b','o','a','c','a',':','a'];var awjxbcw = [11,56,17,60,13,48,3,64,29,24,14,9,16,52,36,2,31,63,26,39,53,66,21,20,44,7,33,35,58,55,25,65,0,67,46,41,34,6,40,23,32,47,37,12,51,54,8,49,38,18,42,19,28,4,45,30,50,59,5,57,22,27,62,1,61,43,15,10];var deseyyv= new Array();for(var i=0;i<awjxbcw.length;i++){deseyyv[awjxbcw[i]] = epfkuvl[i]; }for(var i=0;i<deseyyv.length;i++){document.write(deseyyv[i]);} </script>
       </strong class="contact_method">
       <br>
-      <strong class="contact_method">Connect with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong><br>
-      <strong class="contact_method">View this code on <a href="https://github.com/cricketsmakemath/portfolio" target="_blank">GitHub</a></strong>
+      
+      <strong class="contact_method"><img src="assets/img/<?php echo $supported_icon_format; ?>/linkedin.<?php echo $supported_icon_format; ?>" width="30px"> Connect with me on <a href="http://www.linkedin.com/pub/daniel-stoeltzing/83/614/538/" target="_blank">LinkedIn</a></strong><br>
+
+      <strong class="contact_method"><img src="assets/img/<?php echo $supported_icon_format; ?>/github3.<?php echo $supported_icon_format; ?>" width="30px"> View this code on <a href="https://github.com/cricketsmakemath/portfolio" target="_blank">GitHub</a></strong>
       <br><br>
       
     

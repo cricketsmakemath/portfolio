@@ -6,7 +6,7 @@ function positionDanOnLoad()
   var bottomOffset = $(window).height() - Math.abs(dan.offset().top + dan.height());
   var topOffset    = dan.offset().top + bottomOffset;
   var leftOffset   = ($(window).width() - dan.width()) * 0.5;
-  console.log('LOAD RESIZE: Dan height = '+dan.height()+', Dan top offset = '+dan.offset().top+', Window height = '+$(window).height()+', bottom = '+bottomOffset+', top = '+topOffset+', left = '+leftOffset);
+  // console.log('LOAD RESIZE: Dan height = '+dan.height()+', Dan top offset = '+dan.offset().top+', Window height = '+$(window).height()+', bottom = '+bottomOffset+', top = '+topOffset+', left = '+leftOffset);
   dan.offset({top: topOffset, left: leftOffset});
 
   //lower opacity if overlap occurs

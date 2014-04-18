@@ -376,6 +376,10 @@ a.inactive_link:hover
 	color: red;
 	font-weight: bold;
 }
-
+.email_off
+{
+	font-size: .5em;
+	color: #3d454c;
+}
 
 
